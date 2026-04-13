@@ -2719,6 +2719,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 .media-contacts__map{
     height: 458px;
     margin-top: 22px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    filter: grayscale(100%);
 }
 
 

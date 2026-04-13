@@ -863,6 +863,7 @@
     .media-contacts__map{
         margin-top: 10px;
         height: 211px;
+        border-radius: 10px;
     }
 
 
