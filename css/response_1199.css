@@ -1,0 +1,173 @@
+@media (max-width: 1199px)
+{
+    .header__adres{
+        display: none;
+    }
+
+    .header-list__link{
+        font-size: 14px;
+    }
+
+
+    .submenu__link{
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .header-submenu__item{
+        margin-top: 20px;
+    }
+
+    .header-product{
+        display: none;
+    }
+
+
+    .main-banner{
+        padding-left: 30px;
+    }
+
+    .main-banner__coll{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .main-banner__title{
+        font-size: 50px;
+    }
+
+
+    .main-services__name{
+        font-size: 24px;
+    }
+
+
+    .main-banner{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-banner__coll{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .main-banner__colr{
+        padding-top: 0;
+    }
+
+
+    .certificates__bg{
+        padding: 30px 20px;
+    }
+
+
+    .advantages__item{
+        padding: 20px;
+    }
+
+    .advantages__name{
+        font-size: 24px;
+    }
+
+
+    .main-services__bg{
+        padding: 30px 20px;
+    }
+
+    .main-services__item{
+        padding: 20px;
+    }
+
+    .main-services__bot{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .main-services__btn{
+        width: 100%;
+    }
+
+    .main-services__more{
+        width: 100%;
+        line-height: normal;
+    }
+
+
+    .top-service{
+        padding: 30px 20px;
+    }
+
+    .top-service__bot{
+        gap: 20px;
+    }
+
+    .top-service__bot-coll{
+        width: 232px;
+    }
+
+
+    /* .specialist{
+        padding-left: 11px;
+        padding-right: 11px;
+    } */
+
+    .specialist__pad{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .specialist__name{
+        font-size: 17px;
+    }
+
+
+    .consultation__item{
+        padding: 20px;
+    }
+
+    .consultation__img {
+        width: calc(100% + 40px);
+        margin: -20px;
+    }
+
+
+    .section-case__coll{
+        padding: 20px;
+    }
+
+
+    .media-contacts__item{
+        padding: 20px;
+    }
+
+    .media-contacts__img {
+        width: calc(100% + 40px);
+        margin: -20px;
+    }
+
+
+    .footer__list_info {
+        max-width: 230px;
+    }
+
+    .footer__info{
+        width: 300px;
+        margin-right: 40px;
+    }
+
+    .footer__version{
+        width: 22%;
+    }
+
+
+    .modal__title{
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .modal .form{
+        margin-top: 25px;
+    }
+}

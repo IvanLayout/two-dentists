@@ -1,0 +1,154 @@
+@media (max-width: 479px)
+{
+    .main-title_slider{
+        padding-right: 0;
+    }
+
+    .slider-button-prev._top{
+        position: relative;
+        top: 0;
+        right: auto;
+        left: 0;
+        margin-top: 25px;
+    }
+
+    .slider-button-next._top{
+        left: 53px;
+        right: auto;
+        top: auto;
+        bottom: 0;
+    }
+
+    .btn-white em{
+        display: none;
+    }
+
+    .main-services .btn-white{
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-banner .btn-blue{
+        width: 100%;
+        padding: 0;
+    }
+
+    .media-contacts__desc{
+        font-size: 18px;
+    }
+
+
+    .advantages__list{
+        width: calc(100% + 50px);
+    }
+
+
+    .top-service{
+        padding: 20px 0 196px;
+    }
+
+    .top-service__coll{
+        padding: 0 10px;
+    }
+
+    .top-service__top {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 15px;
+    }
+
+    .top-service__top span{
+        padding: 10px 15px;
+    }
+
+    .top-services__slider .slider-button-prev{
+        bottom: 10px;
+    }
+
+    .top-services__slider .slider-button-next{
+        bottom: 10px;
+    }
+
+    .top-service__bot{
+        bottom: 70px;
+    }
+
+
+    .main-calculate__img{
+        width: calc(100% + 110px);
+        margin-left: -55px;
+        margin-top: 0;
+    }
+
+    .main-calculate__bot{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-calculate__btn{
+        width: 100%;
+    }
+
+
+    .consultation__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .consultation__item{
+        padding: 25px;
+        flex-direction: row;
+        min-height: 1px;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .consultation__number{
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .consultation__desc{
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 18px;
+        padding-right: 10px;
+        align-self: center;
+    }
+
+    .consultation__img {
+        width: calc(100% + 50px);
+        margin: -25px;
+    }
+
+    .section-case__slider .slider-button-prev._top{
+        margin-left: calc(50% - 46px);
+    }
+
+    .section-case__slider .slider-button-next._top{
+        left: 50%;
+        margin-left: 8px;
+    }
+
+    .media-about-us__slider .slider-button-prev._top{
+        margin-left: calc(50% - 46px);
+    }
+
+    .media-about-us__slider .slider-button-next._top{
+        left: 50%;
+        margin-left: 8px;
+    }
+
+
+    .media-contacts__item{
+        grid-column: span 2;
+    }
+
+    .media-contacts__item:nth-child(2){
+        order: 0;
+    }
+
+
+    .footer__list_about {
+        width: 31%;
+    }
+}

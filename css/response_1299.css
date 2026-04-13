@@ -1,0 +1,28 @@
+@media (max-width: 1299px)
+{
+    .certificates__bg{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+	.main-services__bg{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .slider-button-prev{
+        left: 20px;
+    }
+
+    .slider-button-next{
+        right: 20px;
+    }
+
+    .top-service__coll{
+        padding-left: 48px;
+    }
+
+    .footer__list_info{
+        max-width: 320px;
+    }
+}
