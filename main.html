@@ -61,7 +61,7 @@
 									</div>
 								</div>
 
-								<button data-content="#modal-request" class="header__write">
+								<button data-content="#modal-write" class="header__write modal-btn">
 									<span class="header__write-icon">
 										<img data-src="images/write.svg" src="images/img_plug.png" alt="" class="lazyload">
 									</span>
@@ -71,7 +71,7 @@
 						</div>
 					</div>
 					<div class="header__topwrap">
-						<div class="header__top">
+						<div class="header__top header__top_fixmob">
 							<div class="cont _flex">
 								<div class="header__logo">
 									<a href="/" class="header__logo-link">
@@ -106,7 +106,7 @@
 								</div>
 
 								<div class="header__btns _flex">
-									<button data-content="#modal-request" class="header__write">
+									<button data-content="#modal-write" class="header__write modal-btn">
 										<span class="header__write-icon">
 											<img data-src="images/write.svg" src="images/img_plug.png" alt="" class="lazyload">
 										</span>
@@ -961,13 +961,52 @@
 					</div>
 				</header>
 				<div class="overlay"></div>
+
+				<div class="fix-btns">
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<img data-src="images/ic_btn1.svg" src="images/img_plug.png" alt="" class="lazyload">
+							<span class="fix-btns__btn-number">3</span>
+						</span>
+
+						<span class="fix-btns__btn-name">Акции</span>
+					</a>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<img data-src="images/ic_btn2.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</span>
+
+						<span class="fix-btns__btn-name">Контакты</span>
+					</a>
+					<button type="button" class="fix-btns__btn fix-btns__btn_menu open-menu">
+						<span class="fix-btns__btn-icon">
+							<img data-src="images/ic_btn3.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</span>
+
+						<span class="fix-btns__btn-name">Меню</span>
+					</button>
+					<a href="/" class="fix-btns__btn">
+						<span class="fix-btns__btn-icon">
+							<img data-src="images/ic_btn4.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</span>
+
+						<span class="fix-btns__btn-name">Услуги</span>
+					</a>
+					<button type="button" data-content="#modal-request" class="fix-btns__btn modal-btn">
+						<span class="fix-btns__btn-icon fix-btns__btn-icon_blue">
+							<img data-src="images/ic_btn5.svg" src="images/img_plug.png" alt="" class="lazyload">
+						</span>
+
+						<span class="fix-btns__btn-name">Записаться</span>
+					</button>
+				</div>
 				<!-- End Шапка -->
 
 				<section class="first-section">
 					<div class="cont cont_big">
 						<div class="main-banner _flex">
 							<div class="main-banner__coll">
-								<div class="main-banner__title"><span>Стоматология в СПб,</span> которую рекомендуют близким</div>
+								<div class="main-banner__title"><span>Стоматология в Санкт-Петербурге,</span> которую рекомендуют близким</div>
 								<div class="main-banner__desc">Наша миссия — повышать качество жизни людей, и этим пропитано всё: наш подход при планировании лечения, ваш комфорт при получении услуг, интерьер и сервис</div>
 
 								<div class="main-banner__info _flex">
@@ -1315,13 +1354,13 @@
 							</div>
 							<div class="advantages__item _blue">
 								<div class="advantages__top _flex">
-									<div class="advantages__name">Топ-10 лучших клиник&nbsp;СПБ</div>
+									<div class="advantages__name">Входим в топ-10 лучших стоматологий в&nbsp;СПБ</div>
 									<div class="advantages__icon">
 										<img data-src="images/icon3.svg" src="images/img_plug.png" alt="" class="lazyload">
 									</div>
 								</div>
 
-								<div class="advantages__desc">качественное <br>лечение СПБ</div>
+								<div class="advantages__desc">подтверждают <br>независимые рейтинги</div>
 							</div>
 							<div class="advantages__item _light">
 								<div class="advantages__top _flex">
@@ -1366,6 +1405,8 @@
 
 				<section class="top-services _marg">
 					<div class="cont cont_big">
+						<div class="main-title">Наши акции</div>
+
 						<div class="top-services__slider swiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide top-service">
@@ -1736,10 +1777,11 @@
 								<div class="swiper-slide specialist">
 									<a href="/" class="specialist__photo">
 										<img data-src="images/tmp/specialist_photo1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-										<span class="specialist__play">
-											<span></span>
-										</span>
 										<span class="specialist__experience">⏳ Стаж 20 лет</span>
+									</a>
+
+									<a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="specialist__play fancy-img">
+										<span></span>
 									</a>
 
 									<div class="specialist__pad">
@@ -1756,10 +1798,11 @@
 								<div class="swiper-slide specialist">
 									<a href="/" class="specialist__photo">
 										<img data-src="images/tmp/specialist_photo2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-										<span class="specialist__play">
-											<span></span>
-										</span>
 										<span class="specialist__experience">⏳ Стаж 20 лет</span>
+									</a>
+
+									<a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="specialist__play fancy-img">
+										<span></span>
 									</a>
 
 									<div class="specialist__pad">
@@ -1776,10 +1819,11 @@
 								<div class="swiper-slide specialist">
 									<a href="/" class="specialist__photo">
 										<img data-src="images/tmp/specialist_photo3.jpg" src="images/img_plug.png" alt="" class="lazyload">
-										<span class="specialist__play">
-											<span></span>
-										</span>
 										<span class="specialist__experience">⏳ Стаж 20 лет</span>
+									</a>
+
+									<a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="specialist__play fancy-img">
+										<span></span>
 									</a>
 
 									<div class="specialist__pad">
@@ -1796,10 +1840,11 @@
 								<div class="swiper-slide specialist">
 									<a href="/" class="specialist__photo">
 										<img data-src="images/tmp/specialist_photo4.jpg" src="images/img_plug.png" alt="" class="lazyload">
-										<span class="specialist__play">
-											<span></span>
-										</span>
 										<span class="specialist__experience">⏳ Стаж 20 лет</span>
+									</a>
+
+									<a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="specialist__play fancy-img">
+										<span></span>
 									</a>
 
 									<div class="specialist__pad">
@@ -1816,10 +1861,11 @@
 								<div class="swiper-slide specialist">
 									<a href="/" class="specialist__photo">
 										<img data-src="images/tmp/specialist_photo1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-										<span class="specialist__play">
-											<span></span>
-										</span>
 										<span class="specialist__experience">⏳ Стаж 20 лет</span>
+									</a>
+
+									<a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="specialist__play fancy-img">
+										<span></span>
 									</a>
 
 									<div class="specialist__name">
@@ -1834,10 +1880,11 @@
 								<div class="swiper-slide specialist">
 									<a href="/" class="specialist__photo">
 										<img data-src="images/tmp/specialist_photo2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-										<span class="specialist__play">
-											<span></span>
-										</span>
 										<span class="specialist__experience">⏳ Стаж 20 лет</span>
+									</a>
+
+									<a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="specialist__play fancy-img">
+										<span></span>
 									</a>
 
 									<div class="specialist__pad">
@@ -1854,10 +1901,11 @@
 								<div class="swiper-slide specialist">
 									<a href="/" class="specialist__photo">
 										<img data-src="images/tmp/specialist_photo3.jpg" src="images/img_plug.png" alt="" class="lazyload">
-										<span class="specialist__play">
-											<span></span>
-										</span>
 										<span class="specialist__experience">⏳ Стаж 20 лет</span>
+									</a>
+
+									<a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="specialist__play fancy-img">
+										<span></span>
 									</a>
 
 									<div class="specialist__name">
@@ -1872,10 +1920,11 @@
 								<div class="swiper-slide specialist">
 									<a href="/" class="specialist__photo">
 										<img data-src="images/tmp/specialist_photo4.jpg" src="images/img_plug.png" alt="" class="lazyload">
-										<span class="specialist__play">
-											<span></span>
-										</span>
 										<span class="specialist__experience">⏳ Стаж 20 лет</span>
+									</a>
+
+									<a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="specialist__play fancy-img">
+										<span></span>
 									</a>
 
 									<div class="specialist__pad">
@@ -1968,12 +2017,14 @@
 											</p>
 										</div>
 										<div class="section-case__doctor _flex">
-											<div class="section-case__doctor-photo">
+											<a href="/" class="section-case__doctor-photo">
 												<img data-src="images/tmp/photo1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</div>
+											</a>
 
 											<div class="section-case__doctor-box">
-												<div class="section-case__doctor-name">Шабанов Рамазан Гасанович</div>
+												<div class="section-case__doctor-name">
+													<a href="/">Шабанов Рамазан Гасанович</a>
+												</div>
 												<div class="section-case__doctor-position">Стоматолог-терапевт</div>
 											</div>
 										</div>
@@ -2005,12 +2056,14 @@
 											</p>
 										</div>
 										<div class="section-case__doctor _flex">
-											<div class="section-case__doctor-photo">
+											<a href="/" class="section-case__doctor-photo">
 												<img data-src="images/tmp/photo1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</div>
+											</a>
 
 											<div class="section-case__doctor-box">
-												<div class="section-case__doctor-name">Шабанов Рамазан Гасанович</div>
+												<div class="section-case__doctor-name">
+													<a href="/">Шабанов Рамазан Гасанович</a>
+												</div>
 												<div class="section-case__doctor-position">Стоматолог-терапевт</div>
 											</div>
 										</div>
@@ -2042,12 +2095,14 @@
 											</p>
 										</div>
 										<div class="section-case__doctor _flex">
-											<div class="section-case__doctor-photo">
+											<a href="/" class="section-case__doctor-photo">
 												<img data-src="images/tmp/photo1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-											</div>
+											</a>
 
 											<div class="section-case__doctor-box">
-												<div class="section-case__doctor-name">Шабанов Рамазан Гасанович</div>
+												<div class="section-case__doctor-name">
+													<a href="/">Шабанов Рамазан Гасанович</a>
+												</div>
 												<div class="section-case__doctor-position">Стоматолог-терапевт</div>
 											</div>
 										</div>
@@ -2291,7 +2346,7 @@
 									<div class="media-contacts__time">Ежедневно 08:00 – 22:00</div>
 								</div>
 							</div>
-							<div class="media-contacts__item">
+							<div class="media-contacts__item media-contacts__item_photo">
 								<img data-src="images/tmp/contact_img1.jpg" src="images/img_plug.png" alt="" class="lazyload media-contacts__img">
 							</div>
 							<div class="media-contacts__item _light">
@@ -2332,6 +2387,9 @@
 								<a href="mailto:dwadantista@yandex.ru">dwadantista@yandex.ru</a>
 							</div>
 							<div class="footer__adres">г. Санкт-Петербург, Московский проспект, 183/185 лит Б.</div>
+
+							<div class="footer__contact-info">ООО "Твоя улыбка", ОГРН 1197847062467, ИНН 7810752900</div>
+							<div class="footer__contact-info">Лицензия на осуществление медицинской деятельности ЛО-78-01-010344</div>
 
 							<div class="footer__version footer__version_mob">
 								<a href="/">Версия для слабовидящих</a>
@@ -2464,12 +2522,9 @@
 					<div class="footer__bot _flex">
 						<div class="footer__info">
 							<div class="footer__info-item">Информация на сайте носит исключительно информационный характер и не является публичной офертой, определяемой положениями ст. 437 ГК РФ</div>
-							<div class="footer__info-item">ООО "Твоя улыбка", ОГРН 1197847062467, ИНН 7810752900</div>
-							<div class="footer__info-item">Лицензия на осуществление медицинской деятельности ЛО-78-01-010344</div>
-						</div>
-
-						<div class="footer__about">
-							Клиника не является кредитной организацией и не оказывает финансовые услуги. Рассрочка предоставляется банком-партнером. Условия определяются банком. Решение по рассрочке принимает банк-партнер.
+							<div class="footer__info-item">Клиника не является кредитной организацией и не оказывает финансовые услуги. Рассрочка предоставляется банком-партнером. Условия определяются банком. Решение по рассрочке принимает банк-партнер.</div>
+							<div class="footer__info-item footer__info-item_mob">ООО "Твоя улыбка", ОГРН 1197847062467, ИНН 7810752900</div>
+							<div class="footer__info-item footer__info-item_mob">Лицензия на осуществление медицинской деятельности ЛО-78-01-010344</div>
 						</div>
 
 						<div class="footer__version">
@@ -2493,7 +2548,7 @@
 					<form action="" class="form">
 						<div class="form__line">
 							<div class="form__field">
-								<input type="tel" value="" placeholder="+7 (000) 000-00-00" data-mask="+7 (999) 999-99-99" class="form__input" inputmode="verbatim">
+								<input type="tel" value="" placeholder="+7 (000) 000-00-00" data-mask="+7 (999) 999-99-99" class="form__input">
 							</div>
 						</div>
 						<div class="checkbox">
@@ -2514,6 +2569,51 @@
 		</div>
 
 
+		<div id="modal-write" class="modal modal_small">
+			<div class="modal__wrap">
+				<div class="modal__pad">
+					<div class="modal__title modal__title_center">Хотите задать вопрос в&nbsp;мессенджер?</div>
+					<div class="modal__subtitle modal__subtitle_center">Свяжемся в любом удобном для вас мессенджере! Выберите платформу, оставьте имя и телефон - и мы оперативно ответим</div>
+
+					<form action="" class="form">
+						<div class="form__line">
+							<div class="form__field select-wrap">
+								<select name="">
+									<option data-display="Выберите мессенджер"></option>
+									<option value="1">MAX</option>
+									<option value="2">Telegram</option>
+									<option value="3">WhatsApp</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="Ваше имя" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" value="" placeholder="+7 (000) 000-00-00" data-mask="+7 (999) 999-99-99" class="form__input">
+							</div>
+						</div>
+						<div class="checkbox">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
+
+								<span class="checkbox__text">
+									Нажимая на кнопку, вы соглашаетесь на обработку <br>персональных данных и с <a href="/" target="_blank">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>
+						<div class="form__submit form__submit_center">
+							<button type="submit" class="form__submit-btn btn-blue btn-blue_h">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
@@ -2525,6 +2625,7 @@
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/fancybox.js"></script>
 		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
 		<script src="js/jquery.event.move.js"></script>
 		<script src="js/jquery.twentytwenty.js"></script>
 

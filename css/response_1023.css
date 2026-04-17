@@ -1,5 +1,18 @@
 @media (max-width: 1023px)
 {
+	.header__topwrap{
+		height: 78px;
+	}
+
+	.header__top{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: #fff;
+		z-index: 90;
+	}
+
 	.header__request{
         display: none;
     }
@@ -475,17 +488,18 @@
         flex-wrap: wrap;
     }
 
-    .footer__about{
-        width: 100%;
-        margin: 0;
-        max-width: none;
-    }
-
     .footer__info{
         width: 100%;
-        margin: 15px 0 0;
-        order: 2;
+		margin: 0;
     }
+
+	.footer__info-item_mob{
+		display: block;
+	}
+
+	.footer__contact-info{
+		display: none;
+	}
 
 
     .modal{
@@ -500,6 +514,10 @@
     .modal__title br{
         display: inline;
     }
+
+	.modal__subtitle{
+		font-size: 16px;
+	}
 
     .modal .form__submit-btn{
         width: 100%;

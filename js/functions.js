@@ -114,6 +114,9 @@ $(() => {
 		})
 	})
 
+	// Кастомный select
+	$('.select-wrap select').niceSelect()
+
 
 	$('body').on('mouseover', '.submenu__item', function (e) {
 		if ( $(window).width() > 1023 ) {

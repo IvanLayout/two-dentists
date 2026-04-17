@@ -147,6 +147,10 @@
         order: 0;
     }
 
+	.media-contacts__item_photo{
+		display: none;
+	}
+
 
     .footer__list_about {
         width: 31%;

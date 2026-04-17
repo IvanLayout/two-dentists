@@ -25,6 +25,15 @@ $(() => {
 			$('body').addClass('_look')
 		}
 	})
+	$('body').on('click', '.open-menu', function (e) {
+		e.preventDefault()
+
+		$('.mob-menu-btn').addClass('_active')
+		$('.header').addClass('_show')
+
+		$('body').addClass('_look')
+	})
+	
 
 	if ($('.certificates__slider').length) {
 		new Swiper(".certificates__slider", {
@@ -265,7 +274,9 @@ $(() => {
 			preloadImages: false,
 			// allowSlideNext: false,
 			// allowSlidePrev: false,
-			allowTouchMove: false,
+			// allowTouchMove: false,
+			noSwiping: true,
+  			noSwipingClass: 'before-after',
 			lazy: {
 				loadPrevNext: true,
 				elementClass: 'lazyload',

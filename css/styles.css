@@ -912,6 +912,10 @@ button
 }
 
 
+.fix-btns{
+	display: none;
+}
+
 .overlay 
 {
     position: fixed;
@@ -1415,8 +1419,186 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 25px;
 }
 
+.form__submit_center{
+	text-align: center;
+}
+
 .form__submit-btn{
     min-width: 234px;
+}
+
+
+.select-wrap
+{
+    position: relative;
+}
+
+.select-wrap select
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+}
+
+.select-wrap .nice-select
+{
+    position: relative;
+
+    display: block;
+}
+
+.select-wrap .nice-select.disabled
+{
+    pointer-events: none;
+}
+
+.select-wrap .nice-select.open
+{
+    z-index: 15;
+}
+
+.select-wrap .nice-select .current
+{
+    position: relative;
+    z-index: 4;
+
+    color: rgba(32, 79, 99, 0.6);
+    font-size: 16px;
+    line-height: 61px;
+
+    display: block;
+    overflow: hidden;
+
+    height: 63px;
+    padding: 0 40px 0 20px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border: 1px solid rgba(32, 79, 99, 0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    background: rgba(248, 248, 248, 0.3);
+
+    transition: border .2s linear, color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+    .select-wrap .nice-select .current:hover
+    {
+        border-color: #1986AC;
+    }
+}
+
+.select-wrap .nice-select.open .current,
+.select-wrap .nice-select .current.selected
+{
+    color: #204F63;
+}
+
+.select-wrap .nice-select .current:after
+{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 18px;
+
+    margin-top: -5px;
+
+    border-top: 10px solid #1986AC;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+
+    transition: border .2s linear;
+}
+
+.select-wrap .nice-select.open .current:after
+{
+    transform: rotate(180deg);
+}
+
+.select-wrap .nice-select .list
+{
+    position: absolute;
+    z-index: 9;
+    top: calc(100% + 5px);
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    min-width: 100%;
+
+    pointer-events: none;
+
+    opacity: 0;
+	border: 1px solid rgba(32, 79, 99, 0.3);
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(191, 191, 191, .25);
+	border-radius: 8px;
+
+    transition: opacity .2s linear;
+}
+
+.select-wrap .nice-select.open .list
+{
+    visibility: visible;
+
+    pointer-events: all;
+
+    opacity: 1;
+}
+
+.select-wrap .nice-select .list .scrollbar
+{
+    overflow: hidden;
+    overflow-y: auto;
+
+    max-height: 360px;
+    padding: 13px 0;
+
+    scrollbar-width: thin;
+}
+
+.select-wrap .nice-select .list .list_item
+{
+    position: relative;
+
+    color: rgba(32, 79, 99, 0.6);
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding: 7px 20px;
+
+    cursor: pointer;
+
+    transition: color .2s linear;
+}
+
+.select-wrap .nice-select .list .list_item:empty
+{
+    display: none;
+}
+
+.select-wrap .nice-select .list .list_item:hover,
+.select-wrap .nice-select .list .list_item.selected
+{
+    color: #204F63;
+}
+
+.select-wrap .nice-select .list .list_item.selected
+{
+    font-weight: 500;
 }
 
 
@@ -2794,6 +2976,19 @@ input[type=checkbox]:checked + .checkbox__text::after
     font-weight: 500;
 }
 
+.section-case__doctor-name a{
+	color: currentColor;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover){
+	.section-case__doctor-name a:hover{
+		border-bottom-color: currentColor;
+	}
+}
+
 .section-case__doctor-position{
     font-weight: 500;
     font-size: 14px;
@@ -2861,6 +3056,7 @@ input[type=checkbox]:checked + .checkbox__text::after
     padding: 6px 16px 19px;
     display: flex;
     flex-direction: column;
+	position: relative;
 }
 
 .specialists__slider .specialist{
@@ -2894,8 +3090,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .specialist__play{
     position: absolute;
-    right: 3px;
-    top: 13px;
+    right: 19px;
+    top: 19px;
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -2919,12 +3115,12 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 @media (any-hover: hover){
-    .specialist__photo:hover .specialist__play{
+    .specialist__play:hover{
         background-color: rgba(0, 0, 0, 0.3);
         border-color: rgba(255, 255, 255, 0.4);
     }
 
-    .specialist__photo:hover .specialist__play span{
+    .specialist__play:hover span{
         background-color: #204F63;
     }
 }
@@ -2992,6 +3188,15 @@ input[type=checkbox]:checked + .checkbox__text::after
     width: 100%;
 }
 
+
+.top-services .main-title {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.top-services__slider{
+	margin-top: 25px;
+}
 
 .top-service{
     background: #F2F2EF;
@@ -3305,7 +3510,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .footer__contact{
-    width: 183px;
+    width: 224px;
     flex-shrink: 0;
 }
 
@@ -3347,20 +3552,26 @@ input[type=checkbox]:checked + .checkbox__text::after
     color: #fff;
 }
 
+.footer__contact-info{
+	margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.33;
+    color: #fff;
+}
+
 .footer__bot{
-    margin-top: -10px;
+    margin-top: 50px;
     flex-wrap: nowrap;
     align-items: flex-end;
     align-content: flex-end;
 }
 
 .footer__info{
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.33;
     color: #fff;
 
-    width: 312px;
-    flex-shrink: 0;
+    max-width: 965px;
     margin-right: 52px;
 }
 
@@ -3368,18 +3579,13 @@ input[type=checkbox]:checked + .checkbox__text::after
     margin-top: 15px;
 }
 
-.footer__about{
-    font-size: 14px;
-    line-height: 1.33;
-    color: #fff;
-    max-width: 547px;
-    margin-right: 30px;
+.footer__info-item_mob{
+	display: none;
 }
 
 .footer__version{
     margin-left: auto;
     flex-shrink: 0;
-    width: 21.5%;
 
     font-size: 16px;
     line-height: normal;
@@ -3423,8 +3629,15 @@ input[type=checkbox]:checked + .checkbox__text::after
     background: #FFF;
 }
 
+.modal_small{
+	width: 615px;
+}
+
 .modal__wrap{
 	width: 100%;
+}
+
+.modal__wrap._flex{
     align-items: stretch;
     align-content: stretch;
     flex-wrap: nowrap;
@@ -3450,6 +3663,11 @@ input[type=checkbox]:checked + .checkbox__text::after
     width: 100%;
 }
 
+.modal_small .modal__pad{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .modal__title
 {
 	font-weight: 400;
@@ -3458,10 +3676,32 @@ input[type=checkbox]:checked + .checkbox__text::after
     color: #204F63;
 }
 
+.modal__title_center{
+	text-align: center;
+}
+
 .modal__title br{
     display: none;
 }
 
+.modal__subtitle{
+	font-size: 18px;
+	line-height: 1.17;
+	color: #204F63;
+
+	margin-top: 10px;
+}
+
+.modal__subtitle_center{
+	text-align: center;
+}
+
 .modal .form{
     margin-top: 20px;
+}
+
+.modal_small .form{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 542px;
 }
