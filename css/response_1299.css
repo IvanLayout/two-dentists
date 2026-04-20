@@ -1,5 +1,9 @@
 @media (max-width: 1299px)
 {
+    body {
+        zoom: .8;
+    }
+    
     .certificates__bg{
         padding-left: 30px;
         padding-right: 30px;

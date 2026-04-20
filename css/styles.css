@@ -3705,3 +3705,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-right: auto;
 	max-width: 542px;
 }
+
+@media (max-width: 1499px)
+{
+    body{
+        zoom: .9;
+    }
+}
