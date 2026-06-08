@@ -148,6 +148,15 @@
     }
 
 
+    .prices__bg{
+        padding: 30px 20px;
+    }
+
+    .price-services__bg{
+        padding: 30px 20px;
+    }
+
+
     .footer__list_info {
         max-width: 230px;
     }

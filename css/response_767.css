@@ -931,6 +931,14 @@
     }
 
 
+    .media-contacts__grid_inner .media-contacts__item._light{
+        grid-column: span 2;
+    }
+
+    .media-contacts__grid_inner .media-contacts__item:first-child{
+        grid-column: span 2;
+    }
+
     .media-contacts__adres{
         font-size: 18px;
     }
@@ -1044,6 +1052,224 @@
         font-size: 18px;
         line-height: 60px;
     }
+
+
+    .breadcrumbs_pad{
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
+
+    .prices__bg{
+        padding: 15px;
+    }
+
+    .prices__grid{
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .prices__item{
+        padding: 15px;
+    }
+
+    .prices__name{
+        font-size: 16px;
+    }
+
+    .prices__check{
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .prices__check svg{
+        width: 11px;
+        height: 11px;
+    }
+
+
+    .price-services__bg{
+        padding: 15px;
+    }
+
+    .table-price__prices-flex{
+        display: block;
+    }
+
+    .table-price tr {
+        grid-template-columns: 1fr 120px;
+    }
+
+    
+    .review__bg{
+        border-radius: 15px;
+        padding: 15px;
+    }
+
+    .review__bg::before{
+        top: 17px;
+        right: 20px;
+        width: 98px;
+        height: 70px;
+    }
+
+    .review__title{
+        max-width: 100%;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .review__bot{
+        margin-top: 20px;
+    }
+
+    .review__user{
+        font-size: 16px;
+        line-height: normal;
+    }
+    
+    .review__info{
+        font-size: 12px;
+        line-height: 1.33;
+    }
+
+    .text-block{
+        font-size: 14px;
+        line-height: normal;
+    }
+
+
+    .stages-work__bg{
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .stages-work__item{
+        gap: 15px;
+        padding-bottom: 25px;
+    }
+
+    .stages-work__item::before{
+        left: 13.5px;
+    }
+
+    .stages-work__number{
+        width: 28px;
+        line-height: 28px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+    .stages-work__title{
+        font-size: 24px;
+        line-height: 1.08;
+    }
+
+    .stages-work__desc{
+        margin-top: 5px;
+    }
+
+    .stages-work__img{
+        margin-top: 15px;
+    }
+
+    .page-title{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1;
+    }
+
+
+    .small-title{
+        font-size: 24px;
+        line-height: 1.08;
+    }
+
+
+    .service-info__items {
+        display: grid;
+        gap: 10px;
+    }
+
+    .service-info__item-dot{
+        margin-bottom: 10px;
+    }
+
+    .service-info__item-title{
+        font-size: 18px;
+    }
+
+    .service-info__item-desc{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+
+    .service-info__info{
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .service-info__info-icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .service-info__info-icon svg{
+        width: 12px;
+        height: 12px;
+    }
+
+
+    .service-info__doctor{
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .rvice-info__doctor-photo{
+        width: 65px;
+        height: 65px;
+    }
+
+    .rvice-info__doctor-name{
+        font-size: 18px;
+        line-height: 1.17;
+    }
+
+    .rvice-info__doctor-position{
+        font-size: 14px;
+    }
+
+    .service-info__service{
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .service-info__service-flex{
+        gap: 5px;
+    }
+
+    .service-info__service-link{
+        font-size: 12px;
+    }
+
+    .service-info__slider{
+        border-radius: 10px;
+    }
+
+    .service-info__img {
+        border-radius: 10px;
+    }
+
+    .service-info__btn{
+        font-size: 20px;
+        line-height: 67px;
+    }
+
 
 
     .footer{

@@ -152,6 +152,109 @@
 	}
 
 
+    .prices .inner-subtitle{
+        display: none;
+    }
+
+    .prices__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prices__item{
+        min-height: 1px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .prices__item_img{
+        display: none;
+    }
+
+    .prices__check{
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .prices__desc{
+        display: none;
+    }
+
+
+    .table-price tr {
+        grid-template-columns: 1fr;
+    }
+
+    .table-price th {
+        grid-column: span 1;
+    }
+
+    .table-price td.table-price__btn{
+        display: none;
+    }
+
+    .table-price td.table-price__prices{
+        padding-left: 0;
+    }
+
+    .table-price .tr_rel td.table-price__prices{
+        padding-top: 9px;
+    }
+
+    .table-price__prices-flex{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .table-price__price{
+        text-align: left;
+    }
+
+    .table-price__oldprice{
+        order: 2;
+        text-align: left;
+    }
+
+    .table-price .tooltip{
+        align-self: flex-start;
+    }
+
+    .cats__item{
+        min-width: calc(50% - 5px);
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+
+    .stages-work__item{
+        flex-wrap: wrap;
+    }
+
+    .stages-work__item::before{
+        display: none;
+    }
+
+
+    .service-info__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-info__item:nth-child(3){
+        grid-column: span 2;
+    }
+
+    .service-info__img {
+        aspect-ratio: 1 / .976;
+    }
+
+    .service-thumbs{
+        margin-top: 3px;
+    }
+
+
     .footer__list_about {
         width: 31%;
     }

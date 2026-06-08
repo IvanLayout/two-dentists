@@ -385,7 +385,45 @@ $(() => {
 			}
 		})
 	}
-	
+
+	if ($('.service-info').length) {
+		galleryThumbs = new Swiper('.service-thumbs', {
+			spaceBetween: 4,
+			slidesPerView: 3,
+			loop: false,
+			speed: 500,
+			watchOverflow: true,
+			watchSlidesProgress: true,
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 3,
+					slidesPerView: 4,
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 6,
+				}
+			},
+		})
+
+		new Swiper('.service-info__slider', {
+			spaceBetween: 10,
+			loop: false,
+			speed: 1000,
+			watchOverflow: true,
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			thumbs: {
+				swiper: galleryThumbs
+			}
+		})
+	}
 });
 
 
