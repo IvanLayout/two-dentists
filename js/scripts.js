@@ -424,6 +424,30 @@ $(() => {
 			}
 		})
 	}
+
+
+	if ($('.reviews-doctor__slider').length) {
+		new Swiper(".reviews-doctor__slider", {
+			loop: false,
+			spaceBetween: 20,
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			}
+		})
+	}
 });
 
 

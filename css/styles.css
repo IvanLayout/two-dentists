@@ -4385,9 +4385,141 @@ input[type=checkbox]:checked + .checkbox__text::after
     doctor-comment
 ------------*/
 
-.doctor-comment
+.doctor-comment__bg
 {
+	padding: 25px;
+	border-radius: 20px;
+	background: #D4E6EC;
+}
 
+.doctor-comment .text-block
+{
+	max-width: 1210px;
+}
+
+.text-block.text-block_size
+{
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+
+/*------------
+    experience
+------------*/
+
+.experience__items
+{
+	margin-top: 5px;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.experience__item
+{
+	width: calc(100%/2 - 10px);
+	border-radius: 20px;
+	background: #F2F2EF;
+	padding: 25px 23px;
+	margin-top: 20px;
+}
+
+.experience__item._item-width
+{
+	background: #D4E6EC;
+	width: 100%;
+}
+
+.experience__title
+{
+	color: #1986AC;
+	font-size: 24px;
+	line-height: 1.08;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.experience .text-block p
+{
+	margin-bottom: 7px;
+}
+
+.experience__list li
+{
+	list-style: none;
+	position: relative;
+	padding-left: 28px;
+}
+
+.experience__list li + li
+{
+	margin-top: 16px;
+}
+
+.experience__list li::before
+{
+	position: absolute;
+	content: '';
+	top: 2px;
+	left: 0;
+
+	display: block;
+
+	width: 16px;
+	height: 16px;
+
+	border-radius: 50%;
+	background: #D4E6EC;
+}
+
+.experience__item._item-width .experience__list li::before
+{
+	background: #1986AC;
+}
+
+/*------------
+    reviews-doctor
+------------*/
+
+.reviews-doctor__item
+{
+	width: 360px;
+	background: #F2F2EF;
+	border-radius: 20px;
+	padding: 25px 23px;
+	height: auto;
+}
+
+.reviews-doctor__patient-photo
+{
+	width: 52px;
+	height: 52px;
+}
+
+.reviews-doctor__patient-photo img 
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.reviews-doctor__patient-name
+{
+	margin-top: 30px;
+	color: #1986AC;
+	font-size: 24px;
+	line-height: 1.08;
+	font-weight: 500;
+}
+
+.reviews-doctor__patient-desc
+{
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: normal;
 }
 /*------------
     Footer
