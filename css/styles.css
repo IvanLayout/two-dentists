@@ -4174,7 +4174,221 @@ input[type=checkbox]:checked + .checkbox__text::after
     }
 }
 
+/* commit */
 
+.doctor-info__bg
+{
+	border-radius: 30px;
+	background: #F2F2EF;
+	padding: 0 44px;
+}
+
+.doctor-info__cols
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	max-width: 1208px;
+	margin-left: auto;
+}
+
+.doctor-info__coll
+{
+	width: calc(52% - 15px);
+	padding-top: 44px;
+	padding-bottom: 44px;
+}
+
+.doctor-info__colr
+{
+	width: calc(48% - 15px);
+	align-self: flex-end;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	position: relative;
+	padding-right: 30px;
+}
+
+.doctor-info__img
+{
+	margin-top: -25px;
+	position: relative;
+	overflow: hidden;
+}
+
+.doctor-info__img::after
+{
+	position: absolute;
+	content: '';
+	bottom: -160px;
+	right: -130px;
+
+	width: 354px;
+	height: 346px;
+
+	background: #F2F2EF;
+	border-radius: 50%;
+
+	filter: blur(80px);
+	pointer-events: none;
+}
+
+.doctor-info__img::before
+{
+	position: absolute;
+	content: '';
+	bottom: -184px;
+	left: -170px;
+
+	width: 354px;
+	height: 346px;
+
+	background: #F2F2EF;
+	border-radius: 50%;
+
+	filter: blur(80px);
+	pointer-events: none;
+}
+
+.doctor-info__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.doctor-info__spec
+{
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.doctor-info__spec span
+{
+	display: inline-block;
+	background: #fff;
+	line-height: 37px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 10000px;
+}
+
+.doctor-info__name
+{
+	margin-top: 25px;
+}
+
+.doctor-info__items
+{
+	margin: 10px 0 0 -15px;
+}
+
+.doctor-info__item
+{
+	margin: 15px 0 0 15px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.doctor-info__link
+{
+	text-decoration: none;
+	color: currentColor;
+	line-height: 35px;
+	background: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10000px;
+	display: inline-block;
+	transition: background .2s linear, color .2s linear;
+}
+
+.doctor-info__link span
+{
+	border-bottom: 1px solid rgba(32, 79, 99, .3);
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.doctor-info__link:hover
+	{
+		background: #204F63;
+		color: #fff;
+	}
+
+	.doctor-info__link:hover span
+	{
+		border-color: #fff;
+	}
+}
+
+.doctor-info__desc
+{
+	margin-top: 25px;
+	font-size: 14px;
+}
+
+.doctor-info__btns
+{
+	margin: 25px 0 0 -20px;
+}
+
+.doctor-info__btn
+{
+	margin: 20px 0 0 20px;
+}
+
+.doctor-info__btns .btn-blue
+{
+	line-height: 50px;
+	min-width: 172px;
+	font-size: 16px;
+}
+
+.doctor-info__btns .btn-bord
+{
+	line-height: 48px;
+	min-width: 172px;
+	font-size: 16px;
+}
+
+.doctor-info__video span
+{
+	display: inline-block;
+	position: relative;
+	padding-left: 38px;
+}
+
+.doctor-info__video span::before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+
+	display: block;
+
+	width: 28px;
+	height: 28px;
+
+	margin-top: -14px;
+
+	background: url(../images/play2.svg) 50% no-repeat;
+}
+
+/*------------
+    doctor-comment
+------------*/
+
+.doctor-comment
+{
+
+}
 /*------------
     Footer
 ------------*/
