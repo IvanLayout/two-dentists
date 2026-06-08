@@ -4521,6 +4521,144 @@ input[type=checkbox]:checked + .checkbox__text::after
 	font-size: 16px;
 	line-height: normal;
 }
+
+/*------------
+    contacts-page
+------------*/
+
+.contacts-page__box
+{
+	margin-top: 45px;
+}
+
+.contacts-page__grid
+{
+	align-items: stretch;
+	align-content: stretch;
+	margin: -22px 0 0 -22px;
+}
+
+.contacts-page__item
+{
+	width: calc(100%/3 - 22px);
+	margin: 22px 0 0 22px;
+	border-radius: 20px;
+	background: #F2F2EF;
+	padding: 25px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts-page__item._green-item
+{
+	background: #D4E6EC;
+}
+
+.contacts-page__icon
+{
+	height: 73px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.contacts-page__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.contacts-page__info
+{
+	flex: 1 0 auto;
+
+	margin-top: 30px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.contacts-page__phone + .contacts-page__phone
+{
+	margin-top: 15px;
+}
+
+.contacts-page__phone
+{
+	font-size: 28px;
+	line-height: 1.14;
+	font-weight: 500;
+}
+
+.contacts-page__phone a
+{
+	color: #204F63;
+	text-decoration: none;
+}
+
+.contacts-page__adres
+{
+	font-size: 24px;
+	line-height: 1.08;
+	font-weight: 500;
+}
+
+.contacts-page__adres span
+{
+	font-size: 20px;
+}
+
+.contacts-page__info-title
+{
+	font-size: 32px;
+	line-height: 1;
+	font-weight: 500;
+}
+
+.contacts-page__time
+{
+	margin-top: 15px;
+	color: #858585;
+	line-height: 1.16;
+	font-weight: 500;
+}
+
+.contacts-page__details-title
+{
+	color: #858585;
+	line-height: normal;
+}
+
+.contacts-page__details-desc
+{
+	margin-top: 15px;
+	font-weight: 500;
+	line-height: 1.33;
+}
+
+.contacts-page__details-desc a
+{
+	text-decoration: none;
+	color: #204F63;
+	border-bottom: 1px solid #204F63;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.contacts-page__details-desc a:hover
+	{
+		border-bottom-color: transparent;
+	}
+}
 /*------------
     Footer
 ------------*/
