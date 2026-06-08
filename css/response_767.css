@@ -1271,6 +1271,63 @@
     }
 
 
+	/* commit */
+
+	.doctor-info__bg
+	{
+		border-radius: 15px;
+	}
+
+	.doctor-info__coll
+	{
+		width: 100%;
+		padding: 15px;
+	}
+
+	.doctor-info__colr
+	{
+		width: 100%;
+		margin-top: 30px;
+		justify-content: center;
+	}
+
+	.doctor-info__btns
+	{
+		margin-top: 10px;
+	}
+
+	.doctor-info__img
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.doctor-comment__bg
+	{
+		border-radius: 15px;
+	}
+
+	.text-block.text-block_size
+	{
+		font-size: 16px;
+	}
+
+	.experience__item
+	{
+		border-radius: 15px;
+	}
+
+	.experience__list li::before
+	{
+		top: 0;
+	}
+
+	
+	.reviews-doctor__item
+	{
+		border-radius: 15px;
+	}
+
 
     .footer{
         margin: 30px auto 0;

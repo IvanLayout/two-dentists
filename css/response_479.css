@@ -255,6 +255,86 @@
     }
 
 
+	/* commit */
+
+	.doctor-info__name 
+	{
+		margin-top: 22px;
+	}
+
+	.doctor-info__items
+	{
+		margin-top: 5px;
+		margin-left: -5px;
+	}
+
+	.doctor-info__item
+	{
+		margin-top: 15px;
+		margin-left: 5px;
+	}
+
+	.doctor-info__btns
+	{
+		margin-left: -5px;
+	}
+
+	.doctor-info__btn
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.doctor-info__btn > *
+	{
+		width: 100%;
+	}
+
+	.doctor-info__colr 
+	{
+		margin-top: 16px;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.doctor-comment__bg
+	{
+		padding: 15px;
+	}
+
+
+	.experience__item
+	{
+		padding: 15px;
+	}
+
+	.text-block.text-block_size 
+	{
+		font-size: 14px;
+	}
+
+	.experience__list li + li 
+	{
+		margin-top: 18px;
+	}
+
+
+	.reviews-doctor__item
+	{
+		width: 335px;
+	}
+
+	.reviews-doctor__slider .slider-button-prev._top{
+        margin-left: calc(50% - 46px);
+    }
+
+    .reviews-doctor__slider .slider-button-next._top{
+        left: 50%;
+        margin-left: 8px;
+    }
+
+
     .footer__list_about {
         width: 31%;
     }

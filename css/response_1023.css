@@ -581,6 +581,63 @@
         order: 2;
     }
 
+	/* commit */
+
+	.doctor-info__bg
+	{
+		padding-left: 0;
+		padding-right: 0;
+		overflow: hidden;
+	}
+
+	.doctor-info__coll
+	{
+		padding: 25px 0 33px 25px;
+		width: calc(59% - 15px);
+	}
+
+	.doctor-info__colr
+	{
+		width: calc(41% - 15px);
+		padding-right: 0;
+	}
+
+	.doctor-info__img
+	{
+		margin-top: 0;
+		margin-left: -39px;
+		margin-right: -13px;
+	}
+
+	.doctor-info__img::before
+	{
+		width: 234px;
+		height: 230px;
+		bottom: -120px;
+		left: -50px;
+		filter: blur(50px);
+	}
+
+	.doctor-info__img::after
+	{
+		width: 180px;
+		height: 180px;
+		right: -38px;
+		bottom: -101px;
+		filter: blur(50px);
+	}
+
+
+	.doctor-comment__bg
+	{
+		border-radius: 30px;
+	}
+
+	.experience__item
+	{
+		width: 100%;
+	}
+
 
     .footer{
         margin-top: 40px;
