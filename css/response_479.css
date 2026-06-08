@@ -255,6 +255,42 @@
     }
 
 
+    .inner-advantages__grid{
+        gap: 10px;
+    }
+
+    .service-top__prices{
+        gap: 6px 10px;
+    }
+
+    .service-top__bot{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .service-top__bot-colr{
+        width: 100%;
+    }
+
+    .service-top__btn{
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    .service-top__bot-coll{
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .service-top__time{
+        font-size: 18px;
+    }
+
+    .inner-advantages__item{
+        gap: 10px;
+    }
+
+
 	/* commit */
 
 	.doctor-info__name 
@@ -298,7 +334,7 @@
 		padding-right: 24px;
 	}
 
-	.doctor-comment__bg
+	.imp-info__bg
 	{
 		padding: 15px;
 	}

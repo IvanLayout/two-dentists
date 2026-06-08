@@ -1271,6 +1271,137 @@
     }
 
 
+    .service-top__coll{
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .service-top__desc{
+        margin-top: 15px;
+    }
+
+    .service-top__prices{
+        margin-top: 15px;
+    }
+
+    .service-top__price{
+        font-size: 32px;
+    }
+
+    .service-top__oldprice{
+        font-size: 20px;
+    }
+
+    .service-top__bot{
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .service-top__icon{
+        width: 28px;
+        height: 34px;
+    }
+
+    .service-top__bot-colr{
+        width: 130px;
+    }
+
+    .service-top__img{
+        border-radius: 15px;
+    }
+
+    .service-top__flex{
+        gap: 12px;
+    }
+    
+    .content_marg{
+        margin-top: 50px;
+    }
+
+    .aside{
+        padding: 14px 14px 0;
+    }
+
+    .aside__list {
+        max-height: 265px;
+    }
+
+    .inner-advantages__grid{
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .inner-advantages__item {
+        align-items: stretch;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+
+    .inner-advantages__box{
+        order: 0;
+        gap: 5px;
+    }
+
+    .inner-advantages__title{
+        font-size: 24px;
+        line-height: 1.33;
+    }
+
+    .inner-advantages__icon{
+        width: 48px;
+        height: 55px;
+        justify-content: flex-end;
+        align-self: center;
+    }
+
+
+    .content__coll .section-case__title{
+        font-size: 22px;
+        line-height: 1.08;
+    }
+
+    .content__coll .section-case__desc {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .content__coll .section-case__doctor {
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+
+    .content__coll .section-case__doctor-photo {
+        width: 57px;
+        height: 57px;
+        margin: 0 0 5px;
+    }
+
+    .content__coll .section-case__doctor-name {
+        font-size: 15px;
+    }
+
+    .content__coll .section-case__doctor-position{
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .content__coll .section-case__more {
+        font-size: 14px;
+        padding-right: 26px;
+    }
+
+    .content__coll .section-case__more svg {
+        margin-top: -4px;
+        width: 16px;
+        height: 8px;
+    }
+
+    .content__coll .section-case .btn-wrap{
+        margin-top: 25px;
+    }
+
+
 	/* commit */
 
 	.doctor-info__bg
@@ -1302,7 +1433,7 @@
 		margin-right: 0;
 	}
 
-	.doctor-comment__bg
+	.imp-info__bg
 	{
 		border-radius: 15px;
 	}

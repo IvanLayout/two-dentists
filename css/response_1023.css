@@ -581,6 +581,167 @@
         order: 2;
     }
 
+
+    .service-top__flex{
+        gap: 25px;
+    }
+
+    .service-top__coll{
+        width: 100%;
+    }
+
+    .service-top .page-title{
+        max-width: none;
+    }
+
+    .service-top__desc{
+        max-width: none;
+    }
+
+    .service-top__bot{
+        max-width: 569px;
+    }
+
+    .service-top__colr{
+        width: 100%;
+    }
+
+    .service-top__img {
+        min-height: 1px;
+        aspect-ratio: 1 / 0.448;
+        object-position: 50% 17%;
+    }
+
+    .content__flex{
+        flex-wrap: wrap;
+    }
+
+    .content__coll{
+        order: 2;
+        width: 100%;
+    }
+
+    .inner-advantages .main-title__light{
+        display: block;
+    }
+
+    .inner-advantages__grid{
+        gap: 18px;
+    }
+
+    .inner-advantages__item{
+        padding: 15px;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        min-height: 1px;
+    }
+
+    .inner-advantages__box{
+        order: 2;
+    }
+
+    .inner-advantages__icon{
+        justify-content: flex-start;
+        height: 67px;
+        width: 100%;
+    }
+
+    .what-this__coll{
+        width: 100%;
+        max-width: none;
+    }
+
+    .what-this__colr{
+        width: 100%;
+        max-width: 378px;
+        margin-top: 35px;
+    }
+
+    .content__colr{
+        width: 100%;
+    }
+
+    .aside__list {
+        max-height: 265px;
+    }
+
+    .aside__link{
+        max-width: none;
+    }
+
+
+    .what-this__colr{
+        margin-top: 25px;
+    }
+
+    .what-this__list li{
+        line-height: normal;
+    }
+
+    .what-this__list li + li{
+        margin-top: 15px;
+    }
+
+    .what-this__list li::before{
+        top: 2px;
+    }
+    
+
+    .content__coll .section-case__coll{
+        width: 100%;
+    }
+
+    .content__coll .section-case__title{
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    .content__coll .section-case__desc {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .content__coll .section-case__doctor {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .content__coll .section-case__doctor-photo {
+        flex-shrink: 0;
+        margin-right: 15px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .content__coll .section-case__doctor-name {
+        font-size: 18px;
+    }
+
+    .content__coll .section-case__doctor-position{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .content__coll .section-case__more {
+        font-size: 16px;
+        padding-right: 26px;
+    }
+
+    .content__coll .section-case__more svg {
+        margin-top: -4px;
+        width: 16px;
+        height: 8px;
+    }
+
+    .content__coll .section-case .btn-wrap{
+        margin-top: 32px;
+        text-align: center;
+    }
+
+
 	/* commit */
 
 	.doctor-info__bg
@@ -628,7 +789,7 @@
 	}
 
 
-	.doctor-comment__bg
+	.imp-info__bg
 	{
 		border-radius: 30px;
 	}
