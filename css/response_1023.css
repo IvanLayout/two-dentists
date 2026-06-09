@@ -770,6 +770,14 @@
         justify-content: flex-start;
     }
 
+    .text-block h2{
+        font-size: 32px;
+    }
+
+    .text-block h3{
+        font-size: 26px;
+    }
+
 	/* commit */
 
 	.doctor-info__bg
