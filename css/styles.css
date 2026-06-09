@@ -3827,6 +3827,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
+.stages-work_marg
+{
+	margin-top: 25px;
+}
+
 .stages-work__bg{
     padding: 50px;
     border-radius: 40px;
@@ -3834,6 +3839,13 @@ input[type=checkbox]:checked + .checkbox__text::after
     gap: 25px;
     justify-content: space-between;
     flex-wrap: nowrap;
+}
+
+.stages-work__bg-green
+{
+	background: #D4E6EC;
+	border-radius: 30px;
+	padding: 25px;
 }
 
 .stages-work__colr{
@@ -3893,6 +3905,16 @@ input[type=checkbox]:checked + .checkbox__text::after
     margin-top: 10px;
     color: #858585;
     line-height: normal;
+}
+
+.stages-work__desc-medium
+{
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.08;
+
+	width: 100%;
+	align-self: center;
 }
 
 .stages-work__img{
@@ -5426,6 +5448,14 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-radius: 50%;
 	
 	background: #1986AC;
+}
+
+.circle-list__title
+{
+	line-height: 1.16;
+	font-weight: 700;
+	margin-bottom: 10px;
+	display: block;
 }
 /*------------
     Footer
