@@ -5244,6 +5244,113 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 /*------------
+    indicat-cont
+------------*/
+
+.indicat-cont__item
+{
+	margin-top: 25px;
+}
+
+.check-list-bg
+{
+	background: #F2F2EF;
+	border-radius: 20px;
+	padding: 28px 25px;
+}
+
+.check-list li + li
+{
+	margin-top: 18px;
+}
+
+.check-list li
+{
+	list-style: none;
+	padding-left: 31px;
+	position: relative;
+	line-height: 1.33;
+	font-weight: 500;
+}
+
+.check-list li::before
+{
+	position: absolute;
+	content: '';
+	top: 3px;
+	left: 3px;
+
+	display: block;
+
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	
+	background: #87BFA5;
+}
+
+.check-list li::after
+{
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 6px;
+
+	display: block;
+
+	width: 10px;
+	height: 9px;
+	
+	background: url(../images/ic_check.svg) 50% no-repeat;
+}
+
+.cross-list-border
+{
+	border-radius: 20px;
+	border: 1px solid #D4E6EC;
+	padding: 25px;
+}
+
+.cross-list li + li
+{
+	margin-top: 15px;
+}
+
+.cross-list li
+{
+	list-style: none;
+	padding-left: 31px;
+	position: relative;
+	line-height: 1.33;
+	font-weight: 500;
+}
+
+.cross-list li::before
+{
+	position: absolute;
+	content: '';
+	top: 3px;
+	left: 3px;
+
+	display: block;
+
+	width: 16px;
+	height: 16px;
+	
+	background: url(../images/ic_cross.svg) 50% no-repeat;
+}
+
+.indicat-cont__note
+{
+	margin-top: 15px;
+	border-radius: 20px;
+	background: #FCEDED;
+	padding: 20px;
+
+	font-weight: 500;
+	line-height: 1.33;
+}
+/*------------
     Footer
 ------------*/
 .footer{
