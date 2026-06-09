@@ -5247,6 +5247,11 @@ input[type=checkbox]:checked + .checkbox__text::after
     indicat-cont
 ------------*/
 
+.indicat-cont__box + .indicat-cont__box
+{
+	margin-top: 50px;
+}
+
 .indicat-cont__item
 {
 	margin-top: 25px;
@@ -5349,6 +5354,78 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 	font-weight: 500;
 	line-height: 1.33;
+}
+
+
+.indicat-cont__cols
+{
+	justify-content: space-between;
+}
+
+.indicat-cont__coll
+{
+	width: calc(41.86% - 17.5px);
+}
+
+.indicat-cont__img
+{
+	border-radius: 30px;
+	background: #D4E6EC;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	padding-top: 16px;
+	padding-right: 5px;
+}
+
+.indicat-cont__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.indicat-cont__colr
+{
+	width: calc(58.14% - 17.5px);
+}
+
+
+.circle-list
+{
+	margin-top: 25px;
+}
+
+.circle-list li + li
+{
+	margin-top: 28px;
+}
+
+.circle-list li
+{
+	list-style: none;
+	padding-left: 29px;
+	position: relative;
+	line-height: 1.33;
+	font-weight: 500;
+}
+
+.circle-list li::before
+{
+	position: absolute;
+	content: '';
+	top: 3px;
+	left: 1px;
+
+	display: block;
+
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	
+	background: #1986AC;
 }
 /*------------
     Footer
