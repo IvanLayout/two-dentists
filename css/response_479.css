@@ -290,6 +290,20 @@
         gap: 10px;
     }
 
+    .content__coll .cats__item{
+        width: 100%;
+    }
+
+
+    .inner-service__item.swiper-slide{
+        width: 300px;
+    }
+
+    .inner-service__btn{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
 
 	/* commit */
 

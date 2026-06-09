@@ -742,6 +742,30 @@
     }
 
 
+    .indicat-cont__box + .indicat-cont__box{
+        margin-top: 80px;
+    }
+
+    .indicat-cont__coll{
+        width: 100%;
+        order: 2;
+        margin-top: 38px;
+        max-width: 378px;
+    }
+
+    .indicat-cont__colr{
+        width: 100%;
+    }
+
+    .circle-list li + li{
+        margin-top: 25px;
+    }
+
+    .stages-work__bg-green{
+        border-radius: 15px;
+    }
+
+
 	/* commit */
 
 	.doctor-info__bg

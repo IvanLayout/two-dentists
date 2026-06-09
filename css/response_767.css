@@ -1402,6 +1402,141 @@
     }
 
 
+    .check-list-bg{
+        border-radius: 15px;
+        padding: 20px 15px;
+    }
+
+    .check-list li::before{
+        top: 1px;
+    }
+
+    .check-list li::after{
+        top: 5px;
+    }
+
+    .check-list li{
+        line-height: normal;
+        padding-left: 30px;
+    }
+
+    .cross-list-border{
+        padding: 14px;
+        border-radius: 15px;
+    }
+
+    .cross-list li{
+        padding-left: 30px;
+        line-height: normal;
+    }
+
+    .cross-list li + li{
+        margin-top: 10px;
+    }
+
+    .cross-list li::before{
+        top: 1px;
+    }
+
+    .indicat-cont__note{
+        margin-top: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        line-height: normal;
+    }
+
+    .indicat-cont__box + .indicat-cont__box{
+        margin-top: 50px;
+    }
+
+    .circle-list li + li{
+        margin-top: 10px;
+    }
+
+    .circle-list li::before{
+        top: 1px;
+    }
+
+    .indicat-cont__coll{
+        margin-top: 25px;
+        width: 378px;
+        max-width: 71.65%;
+    }
+
+    .indicat-cont__img{
+        border-radius: 10px 10px 10px 0;
+    }
+
+    .stages-work__bg-green{
+        padding: 15px;
+    }
+
+    .stages-work__desc-medium{
+        font-size: 18px;
+    }
+
+    .faq__item{
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .faq__open{
+        font-size: 18px;
+        line-height: 1.17;
+    }
+
+    .faq__open-btn{
+        width: 32px;
+        height: 32px;
+        margin-left: 10px;
+    }
+
+    .faq__open-close{
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+
+    .faq__open-close span{
+        height: 2px;
+    }
+
+    .faq__open-close span:nth-child(1) {
+        top: 9px;
+    }
+
+    .faq__open-close span:nth-child(2) {
+        top: 7px;
+    }
+
+    .faq__open-arrow{
+        border-bottom-width: 2px;
+        border-right-width: 2px;
+        width: 10px;
+        height: 10px;
+        margin-top: -7px;
+        margin-left: -5px;
+    }
+
+    .faq__data{
+        padding-top: 10px;
+    }
+
+    .faq__desc{
+        padding-right: 15px;
+    }
+
+
+    .inner-service__bot{
+        text-align: left;
+    }
+
+    .inner-service__bot .btn-light{
+        font-size: 20px;
+        line-height: 67px;
+    }
+
 	/* commit */
 
 	.doctor-info__bg

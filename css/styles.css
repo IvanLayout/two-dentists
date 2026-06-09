@@ -3115,6 +3115,7 @@ input[type=checkbox]:checked + .checkbox__text::after
     height: 100px;
     filter: blur(17px);
     background: #fff;
+    z-index: 1;
 }
 
 .specialist__photo img{
@@ -3176,6 +3177,7 @@ input[type=checkbox]:checked + .checkbox__text::after
     font-weight: 500;
     font-size: 10px;
     line-height: 22px;
+    z-index: 2;
 }
 
 .specialist__pad{
@@ -4586,6 +4588,141 @@ input[type=checkbox]:checked + .checkbox__text::after
     text-align: left;
 }
 
+
+.inner-service__item.swiper-slide{
+    width: 360px;
+}
+
+.inner-service__item{
+    border-radius: 20px;
+    background: #F2F2EF;
+    padding: 25px 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-service__name{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.08;
+    color: #1986AC;
+    width: 100%;
+}
+
+.inner-service__name a{
+    color: #1986AC;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: border .2s linear;
+}
+
+@media (any-hover: hover){
+    .inner-service__name a:hover{
+        border-bottom-color: transparent;
+    }
+}
+
+.inner-service__desc{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: normal;
+    width: 100%;
+}
+
+.inner-service__prices{
+    margin-top: 10px;
+}
+
+.inner-service__prices-title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
+    color: #858585;
+}
+
+.inner-service__price{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.08;
+    color: #204F63;
+    margin-top: 15px;
+}
+
+.inner-service__bot{
+    width: 100%;
+    padding-top: 10px;
+    margin-top: auto;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+.inner-service__btn{
+    border: 1px solid currentColor;
+    border-radius: 12px;
+    padding: 0 14px;
+    flex-shrink: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: currentColor;
+    transition: background .2s linear, color .2s linear, border-color .2s linear;
+}
+
+@media (any-hover: hover){
+    .inner-service__btn:hover{
+        background-color: #204F63;
+        border-color: #204F63;
+        color: #fff;
+    }
+}
+
+.inner-service__more{
+    width: 104px;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 52px;
+    color: currentColor;
+    transition: color .2s linear;
+}
+
+.inner-service__more span{
+    display: inline-block;
+    position: relative;
+    padding-right: 26px;
+}
+
+.inner-service__more svg{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: block;
+    width: 16px;
+    height: 8px;
+    margin-top: -4px;
+    fill: currentColor;
+}
+
+@media (any-hover: hover){
+    .inner-service__more:hover{
+        color: #1986AC;
+    }
+}
+
+.inner-service__bot{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.inner-service__bot .btn-light{
+    padding: 0 16px;
+}
+
 /* commit */
 
 .doctor-info__bg
@@ -5400,6 +5537,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 	flex-wrap: wrap;
 	padding-top: 16px;
 	padding-right: 5px;
+    aspect-ratio: 1/1.006;
 }
 
 .indicat-cont__img img
@@ -5407,6 +5545,11 @@ input[type=checkbox]:checked + .checkbox__text::after
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
+    height: 100%;
+}
+
+.indicat-cont__img img.loaded{
+    height: auto;
 }
 
 .indicat-cont__colr
@@ -5577,6 +5720,7 @@ input[type=checkbox]:checked + .checkbox__text::after
     width: 100%;
     height: 3px;
     background: #1986AC;
+    border-radius: 2px;
 }
 
 .faq__open-close span:nth-child(1) 
