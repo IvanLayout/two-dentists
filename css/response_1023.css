@@ -766,6 +766,10 @@
     }
 
 
+    .similar-services__flex{
+        justify-content: flex-start;
+    }
+
 	/* commit */
 
 	.doctor-info__bg

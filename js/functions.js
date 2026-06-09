@@ -35,6 +35,12 @@ $(() => {
 
 		let offsetTop = 10;
 
+		if ( $(window).width() < 1024 && $(window).width() > 767 ){
+			offsetTop = $('.header__top').innerHeight() + 10
+		} else if ( $(window).width() < 768 ){
+			offsetTop = $('.header__mob-top').innerHeight() + 10
+		}
+
 		$('html, body').stop().animate({ scrollTop: $(href).offset().top - offsetTop }, 1000)
 	})
 

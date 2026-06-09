@@ -1537,6 +1537,51 @@
         line-height: 67px;
     }
 
+
+    .service-top__box{
+        margin-top: 15px;
+        padding: 10px;
+        min-width: 158px;
+    }
+
+    .service-top__box-price{
+        font-size: 24px;
+        line-height: 1.08;
+    }
+
+    .service-top__list{
+        margin-top: 19px;
+    }
+
+    .service-top__list li + li{
+        margin-top: 19px;
+    }
+
+    .service-top__list li::before{
+        top: 1px;
+    }
+
+    .service-top__wrap{
+        margin-top: 19px;
+    }
+
+    .service-top__wrap .btn-blue{
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    .text-block ul{
+        margin-bottom: 20px;
+    }
+
+    .text-block li::before{
+        top: 1px;
+    }
+
+    .text-block li + li{
+        margin-top: 19px;
+    }
+
 	/* commit */
 
 	.doctor-info__bg

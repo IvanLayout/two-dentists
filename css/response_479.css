@@ -305,6 +305,11 @@
     }
 
 
+    .service-top__wrap .btn-blue{
+        width: 100%;
+    }
+
+
 	/* commit */
 
 	.doctor-info__name 
