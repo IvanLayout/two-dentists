@@ -1460,6 +1460,105 @@
 	}
 
 
+	.contacts-page__item 
+	{
+		width: calc(100% / 1 - 22px);
+		border-radius: 10px;
+		padding: 20px;
+	}
+
+	.contacts-page__icon
+	{
+		height: 49px;
+	}
+
+	.contacts-page__info._marg-tablet
+	{
+		margin-top: 25px;
+	}
+
+	.contacts-page__phone
+	{
+		font-size: 24px;
+	}
+
+	.contacts-page__info-title
+	{
+		font-size: 24px;
+	}
+
+	.contacts-page__time
+	{
+		margin-top: 5px;
+	}
+
+
+	.contacts-page__coll
+	{
+		border-radius: 10px;
+		padding: 15px;
+	}
+
+	.contacts-page__get-title
+	{
+		font-size: 28px;
+	}
+
+	.contacts-page__get-adres
+	{
+		margin-top: 15px;
+	}
+
+	.contacts-page__get-item
+	{
+		border-radius: 10px;
+		padding: 15px;
+		margin-top: 15px;
+	}
+
+	.contacts-page__get-open::before
+	{
+		top: 1px;
+	}
+
+	.contacts-page__get-open::after
+	{
+		top: 7px;
+	}
+
+	.contacts-page__get-item._active .contacts-page__get-open::after
+	{
+		top: 6px;
+	}
+
+	.contacts-page__get-list li
+	{
+		padding-left: 20px;
+	}
+
+	.contacts-page__get-list li::before
+	{
+		left: 7px;
+	}
+
+	.contacts-page__colr
+	{
+		border-radius: 10px;
+	}
+
+
+	.details-info__bg
+	{
+		border-radius: 10px;
+		padding: 20px;
+	}
+
+	.details-info__item + .details-info__item 
+	{
+		margin-top: 5px;
+	}
+
+
     .footer{
         margin: 30px auto 0;
         max-width: calc(100% - 40px);

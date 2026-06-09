@@ -371,6 +371,43 @@
     }
 
 
+	.contacts-page__item
+	{
+		padding: 10px;
+	}
+
+	.contacts-page__icon
+	{
+		height: 44px;
+	}
+	
+	.contacts-page__get-title
+	{
+		font-size: 24px;
+	}
+
+	.contacts-page__get-item
+	{
+		padding-top: 19px;
+		padding-bottom: 19px;
+	}
+
+	.media-contacts__map._tablet-height 
+	{
+		height: 211px;
+	}
+
+	.details-info .main-title
+	{
+		font-size: 24px;
+	}
+
+	.details-info__bg
+	{
+		padding: 15px;
+	}
+
+
     .footer__list_about {
         width: 31%;
     }

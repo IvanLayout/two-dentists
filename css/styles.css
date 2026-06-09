@@ -4974,10 +4974,8 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 20px;
 
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-end;
-	align-content: flex-end;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .contacts-page__phone + .contacts-page__phone

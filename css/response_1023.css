@@ -800,6 +800,82 @@
 	}
 
 
+	.contacts-page__item
+	{
+		width: calc(100% / 2 - 22px);
+	}
+
+	.contacts-page__item._tablet-item
+	{
+		width: calc(100% / 1 - 22px);
+	}
+	
+	.contacts-page__box
+	{
+		margin-top: 25px;
+	}
+
+	.contacts-page__icon
+	{
+		height: 63px;
+	}
+
+	.contacts-page__info
+	{
+		justify-content: flex-start;
+		margin-top: 15px;
+	}
+
+	.contacts-page__info._marg-tablet
+	{
+		margin-top: 55px;
+	}
+
+	.contacts-page__adres span
+	{
+		font-size: 18px;
+	}
+
+	.contacts-page__details-desc span
+	{
+		display: block;
+	}
+
+
+	.contacts-page__coll
+	{
+		width: 100%;
+		border-radius: 20px;
+		padding: 25px;
+	}
+
+	.contacts-page__colr
+	{
+		width: 100%;
+		border-radius: 20px;
+		aspect-ratio: 1 / .788;
+		margin-top: 25px;
+	}
+
+
+	.media-contacts__map._tablet-height
+	{
+		height: 261px;
+	}
+
+
+	.details-info .main-title
+	{
+		font-size: 32px;
+	}
+
+	.details-info__bg
+	{
+		margin-top: 15px;
+		border-radius: 20px;
+	}
+
+
     .footer{
         margin-top: 40px;
     }
