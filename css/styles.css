@@ -5457,6 +5457,184 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-bottom: 10px;
 	display: block;
 }
+
+
+/*------------
+    faq
+------------*/
+
+.accordion__data
+{
+    display: none;
+}
+
+.faq__item
+{
+	margin-top: 15px;
+	background: #F2F2EF;
+	border-radius: 20px;
+	padding: 25px;
+}
+
+.faq__open
+{
+	cursor: pointer;
+	line-height: 1.08;
+	font-weight: 500;
+	font-size: 24px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.faq__open-btn
+{
+	flex-shrink: 0;
+	position: relative;
+
+	width: 50px;
+	height: 50px;
+	margin-left: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	background: #fff;
+	border-radius: 50%;
+	transition: background .2s linear;
+}
+
+.faq__open-arrow
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	width: 14px;
+	height: 14px;
+	
+	margin-top: -9px;
+	margin-left: -7px;
+
+	transform: rotate(45deg);
+
+	border-bottom: 3px solid #204F63;
+	border-right: 3px solid #204F63;
+	transition: border .2s linear, opacity .2s linear;
+}
+
+.faq__open-check
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	width: 18px;
+	height: 14px;
+
+	margin-top: -6px;
+	margin-left: -9px;
+
+	display: block;
+
+	fill: #204F63;
+	stroke: #204F63;
+	transition: stroke .2s linear, fill .2s linear, opacity .2s linear;
+}
+
+.faq__open-close
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	width: 26px;
+	height: 26px;
+
+	margin-top: -13px;
+	margin-left: -13px;
+
+	display: block;
+	opacity: 0;
+	transition: opacity .2s linear;
+}
+
+.faq__open-close span 
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #1986AC;
+}
+
+.faq__open-close span:nth-child(1) 
+{
+    top: 12px;
+    transform: rotate(45deg);
+}
+
+.faq__open-close span:nth-child(2) 
+{
+    top: 9px;
+    transform: rotate(-45deg);
+}
+
+@media (any-hover: hover)
+{
+	.faq__open:hover .faq__open-btn
+	{
+		background: #204F63;
+	}
+
+	.faq__open:hover .faq__open-arrow
+	{
+		border-color: #fff;
+	}
+
+	.faq__open:hover .faq__open-check
+	{
+		fill: #fff;
+		stroke: #fff;
+	}
+}
+
+.faq__item._active .faq__open .faq__open-btn
+{
+	background: #D4E6EC;
+}
+
+.faq__item._active .faq__open .faq__open-arrow,
+.faq__item._active .faq__open .faq__open-check
+{
+	opacity: 0;
+}
+
+.faq__item._active .faq__open .faq__open-close
+{
+	opacity: 1;
+}
+
+.faq__data
+{
+	padding-top: 20px;
+}
+
+.faq__desc
+{
+	line-height: normal;
+}
 /*------------
     Footer
 ------------*/
