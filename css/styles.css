@@ -1129,8 +1129,11 @@ button
     line-height: 1.15;
 }
 
-.text-block h1,
-.text-block .title
+.text-block_small{
+    max-width: 610px;
+}
+
+.text-block h1
 {
 	font-weight: 400;
     font-size: 58px;
@@ -1189,6 +1192,7 @@ button
     display: block;
 
     max-width: 100%;
+    border-radius: 30px;
     margin-bottom: 20px;
 }
 
@@ -1221,9 +1225,6 @@ button
     position: relative;
     padding-left: 30px;
     line-height: 1.33;
-}
-
-.text-block_bold li{
     font-weight: 500;
 }
 
@@ -1246,6 +1247,41 @@ button
 {
     margin-left: 22px;
 	margin-bottom: 20px;
+}
+
+.text-block__cols{
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.text-block__coll{
+    width: 51.64%;
+}
+
+.text-block__colr{
+    width: calc(48.16% - 22px);
+}
+
+.text-block__col{
+    width: calc(100%/2 - 11px);
+}
+
+.text-block__coll > :last-child,
+.text-block__colr > :last-child,
+.text-block__col > :last-child{
+    margin-bottom: 0;
+}
+
+.text-block__cols ._blue{
+    background: #D4E6EC;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.text-block__cols ._gray{
+    background: #F2F2EF;
+    border-radius: 20px;
+    padding: 25px;
 }
 
 
@@ -1353,6 +1389,10 @@ button
     margin-top: 6px;
 }
 
+.checkbox_dot{
+    width: 20px;
+}
+
 .checkbox input[type=checkbox]
 {
     display: none;
@@ -1366,6 +1406,10 @@ button
 
     cursor: pointer;
     vertical-align: top;
+}
+
+.checkbox_dot .checkbox__label{
+    display: block;
 }
 
 .checkbox__text
@@ -1386,6 +1430,11 @@ button
     transition: .2s linear;
 }
 
+.checkbox_dot .checkbox__text{
+    width: 20px;
+    height: 20px;
+}
+
 .checkbox__text::before
 {
     content: "";
@@ -1402,12 +1451,24 @@ button
     border: 1px solid #204F63;
     border-radius: 2px;
 
-    transition: background .2s linear;
+    transition: background .2s linear, border .2s linear;
+}
+
+.checkbox_dot .checkbox__text::before{
+    width: 20px;
+    height: 20px;
+    border-color: #D0D5DD;
+    border-radius: 6px;
 }
 
 input[type=checkbox]:checked + .checkbox__text::before
 {
     background: #204F63;
+}
+
+.checkbox_dot input[type=checkbox]:checked +  .checkbox__text::before{
+    background: #1986AC;
+    border-color: #1986AC;
 }
 
 .checkbox__text::after
@@ -1426,6 +1487,12 @@ input[type=checkbox]:checked + .checkbox__text::before
     background: url(../images/check.svg) 50% no-repeat;
 
     transition: opacity .2s linear;
+}
+
+.checkbox_dot .checkbox__text::after{
+    width: 20px;
+    height: 20px;
+    background-size: 12px auto;
 }
 
 input[type=checkbox]:checked + .checkbox__text::after
@@ -2046,17 +2113,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .swiper-scrollbar
 {
-    display: none;
-
     transition: opacity 0s .1s linear;
-}
-
-.swiper-scrollbar._hide
-{
-    opacity: 0;
-
-    transition-delay: .3s;
-    transition-duration: .3s;
 }
 
 .swiper .swiper-scrollbar
@@ -2066,15 +2123,19 @@ input[type=checkbox]:checked + .checkbox__text::after
     left: 0;
 
     width: 100%;
-    height: 5px;
-    margin-top: 10px;
+    height: 23px;
+    background: none;
 
-    background: #F5F5F5;
+    border-bottom: 1px solid #EAECF0;
+    border-radius: 0;
+    padding-top: 1px;
 }
 
 .swiper .swiper-scrollbar-drag
 {
-    background: #E5E5E5;
+    background: #EAECF0;
+    margin-top: 7px;
+    height: 6px;
 }
 
 /*------------------------
@@ -2611,6 +2672,19 @@ input[type=checkbox]:checked + .checkbox__text::after
     background-size: 20px auto;
 }
 
+.comment__img{
+    border-radius: 15px;
+    overflow: hidden;
+    display: block;
+}
+
+.comment__img img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/.832;
+}
+
 .comment__title{
     font-weight: 500;
     margin-top: 15px;
@@ -2755,6 +2829,13 @@ input[type=checkbox]:checked + .checkbox__text::after
     overflow-clip-margin: 15px;
 }
 
+.media-about-us__grid{
+    gap: 25px 0;
+    margin-top: 25px;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: -25px;
+}
 
 .media-about-us__item{
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
@@ -2763,6 +2844,11 @@ input[type=checkbox]:checked + .checkbox__text::after
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.media-about-us__grid .media-about-us__item{
+    width: calc(100%/3 - 25px);
+    margin-left: 25px;
 }
 
 .media-about-us__slider  .media-about-us__item{
@@ -4844,6 +4930,218 @@ input[type=checkbox]:checked + .checkbox__text::after
 .similar-services__bot{
     margin-top: 25px;
     text-align: center;
+}
+
+
+.make-appointment_marg{
+    margin-top: 120px;
+}
+
+.make-appointment__bg{
+    background: #D4E6EC;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.make-appointment__coll{
+    width: 60%;
+    padding: 50px;
+    align-self: flex-start;
+}
+
+.make-appointment__box{
+    max-width: 474px;
+}
+
+.make-appointment__desc{
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.make-appointment__bot{
+    margin-top: 55px;
+}
+
+.make-appointment__btn{
+    min-width: 243px;
+}
+
+.make-appointment__colr{
+    width: 40%;
+    max-width: 450px;
+    aspect-ratio: 1/1.2223;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: -6.2%;
+}
+
+.make-appointment__colr img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+    border-radius: 0 30px 30px 0;
+}
+
+
+.inner-img__bg{
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+
+    border-bottom: 10px solid #e31e24;
+    border-radius: 15px;
+    padding: 25px 25px 15px;
+}
+
+.inner-img__text{
+    max-width: 945px;
+}
+
+.inner-img__text p{
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.inner-img__text b{
+    font-weight: 900;
+    color: #e31e24;
+}
+
+.inner-img__text > :last-child{
+    margin-bottom: 0 !important;
+}
+
+
+.pagination{
+    margin-top: 35px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pagination a{
+    display: block;
+    line-height: 28px;
+    padding: 0 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #204F63;
+    text-decoration: none;
+    border-radius: 3px;
+    min-width: 28px;
+    transition: color .2s linear, background .2s linear;
+}
+
+@media (any-hover: hover){
+    .pagination a:hover{
+        color: #fff;
+        background: #1986AC;
+    }
+}
+
+.pagination a.active{
+    color: #fff;
+    background: #1986AC;
+}
+
+.pagination__link + .pagination__link{
+    margin-left: 10px;
+}
+
+
+.table-slider .swiper-slide{
+    width: auto;
+    min-width: 100%;
+    height: auto;
+}
+
+.main-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-table th{
+    border-bottom: 1px solid #eaecf0;
+    padding: 11px 0 11px 23px;
+    background: #fcfcfd;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #204F63;
+    text-align: left;
+}
+
+.main-table .th-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    background: transparent;
+}
+
+.main-table td{
+    border-bottom: 1px solid #eaecf0;
+    padding: 11px 0 11px 23px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #204F63;
+}
+
+.main-table td span{
+    color: #101828;
+}
+
+.info-sticker span{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: #037847 !important;
+    padding: 0 8px 0 20px;
+    border-radius: 16px;
+    position: relative;
+    background-color: #ECFDF3;
+}
+
+.info-sticker span::before{
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    border-radius: 50%;
+    background-color: #14BA6D;
+}
+
+.info-sticker_inactive span{
+    color: #364254 !important;
+    background-color: #F2F4F7;
+}
+
+.info-sticker_inactive span::before{
+    background-color: #6C778B;
+}
+
+.main-table_th{
+    table-layout: fixed;
+    width: 43px;
+}
+
+.main-table_td{
+    table-layout: fixed;
+    width: 43px;
 }
 /* commit */
 

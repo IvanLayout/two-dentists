@@ -471,6 +471,19 @@ $(() => {
 			}
 		})
 	}
+
+	
+
+	if ($('.table-slider').length) {
+		new Swiper(".table-slider", {
+			direction: "horizontal",
+			slidesPerView: "auto",
+			freeMode: true,
+			scrollbar: {
+				el: ".swiper-scrollbar",
+			},
+		})
+	}
 });
 
 
