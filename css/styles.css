@@ -3727,6 +3727,10 @@ input[type=checkbox]:checked + .checkbox__text::after
     top: 9px;
 }
 
+.table-price ._hide{
+    display: none;
+}
+
 .sticker{
     padding: 0 10px;
     font-weight: 500;

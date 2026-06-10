@@ -219,11 +219,45 @@ $(() => {
 			parent.find('.accord__data').slideDown(300)
 		}
 	})
-})
 
+    $('.cats__item_price').on('click', function () {
+        const price = $(this).data('price').toString();
+        filterPrices(price);
+    });
 
-$(window).on('load', () => {
-	
+    const hash = window.location.hash;
+
+    if (hash.length) {
+        let $target = $(hash);
+
+        if ($target.length) {
+            const category = $target.data('item-price');
+
+            if (category) {
+                filterPrices(category.toString());
+            }
+
+			const $button = $('.cats__item_price[data-price-name="' + $target.attr('id') + '"]');
+
+			if ($button.length) {
+				$target = $('#prices')
+			}
+
+            let offsetTophash = 10;
+
+			if ( $(window).width() < 1024 && $(window).width() > 767 ){
+				offsetTophash = $('.header__top').innerHeight() + 10
+			} else if ( $(window).width() < 768 ){
+				offsetTophash = $('.header__mob-top').innerHeight() + 10
+			}
+
+            setTimeout(function () {
+                $('html, body').stop().animate({
+                    scrollTop: $target.offset().top - offsetTophash
+                }, 100);
+            }, 100);
+        }
+    }
 })
 
 
@@ -243,3 +277,18 @@ function setHeight(className){
 }
 
 const is_touch_device = () => !!('ontouchstart' in window)
+
+
+function filterPrices(price) {
+	$('.cats__item_price').removeClass('_active');
+	$('.cats__item_price[data-price="' + price + '"]').addClass('_active');
+
+	const $rows = $('.table-price_cats tr[data-item-price]');
+
+	if (price === 'all') {
+		$rows.removeClass('_hide');
+	} else {
+		$rows.addClass('_hide');
+		$rows.filter('[data-item-price="' + price + '"]').removeClass('_hide');
+	}
+}
