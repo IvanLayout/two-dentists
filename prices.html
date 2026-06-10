@@ -1054,17 +1054,34 @@
 
 				<section class="price-services _marg">
 					<div class="cont">
-						<div class="price-services__bg">
+						<div class="price-services__bg" id="prices">
 							<div class="main-title">Цены на услуги</div>
 							<div class="inner-subtitle">Нажмите, чтобы переключить</div>
 
 							<div class="cats cats_marg _flex">
-								<a class="cats__item _active">
+								<button type="button" data-price="all" class="cats__item cats__item_price _active">
 									<span>Все цены</span>
-								</a>
-								<a href="/" class="cats__item">
-									<span>Консультации</span>
-								</a>
+								</button>
+								<button type="button" data-price="1" data-price-name="price1" class="cats__item cats__item_price">
+									<span>Консультация</span>
+								</button>
+								<button type="button" data-price="2" data-price-name="price2" class="cats__item cats__item_price">
+									<span>Диагностика</span>
+								</button>
+								<button type="button" data-price="3" data-price-name="price3" class="cats__item cats__item_price">
+									<span>Лечение зубов</span>
+								</button>
+								<button type="button" data-price="4" data-price-name="price4" class="cats__item cats__item_price">
+									<span>Удаление зубов</span>
+								</button>
+							</div>
+							<!-- <div class="cats cats_marg _flex">
+								<button type="button" data-price="all" class="cats__item cats__item_price _active">
+									<span>Все цены</span>
+								</button>
+								<button type="button" data-price="2" data-price-name="price2" class="cats__item cats__item_price">
+									<span>Консультация</span>
+								</button>
 								<a href="/" class="cats__item">
 									<span>Диагностика</span>
 								</a>
@@ -1092,13 +1109,13 @@
 								<a href="/" class="cats__item">
 									<span>Детская стоматология</span>
 								</a>
-							</div>
+							</div> -->
 
-							<table class="table-price">
-								<tr>
+							<table class="table-price table-price_cats">
+								<tr data-item-price="1" id="price1">
 									<th colspan="3" class="table-price__title">Консультации</th>
 								</tr>
-								<tr class="tr_rel">
+								<tr class="tr_rel" data-item-price="1">
 									<td class="table-price__info">
 										<div class="stickers _flex">
 											<div class="sticker">🔥 Акция</div>
@@ -1135,7 +1152,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="1">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Повторный прием ребенка с целью адаптации к лечению</div>
@@ -1167,7 +1184,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="1">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Прием (осмотр, консультация) Гнатолога</div>
@@ -1199,7 +1216,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="1">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Прием (осмотр, консультация) врача-ортодонта с установленной брекет системой</div>
@@ -1231,7 +1248,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="1">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
@@ -1263,10 +1280,10 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="2" id="price2">
 									<th colspan="3" class="table-price__title">Диагностика</th>
 								</tr>
-								<tr>
+								<tr data-item-price="2">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
@@ -1298,7 +1315,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="2">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
@@ -1330,7 +1347,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="2">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Прием (осмотр, консультация) врача-ортодонта с установленной брекет системой</div>
@@ -1362,7 +1379,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="2">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
@@ -1394,10 +1411,10 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="3" id="price3">
 									<th colspan="3" class="table-price__title">Лечение зубов</th>
 								</tr>
-								<tr>
+								<tr data-item-price="3">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
@@ -1429,7 +1446,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="3">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
@@ -1461,7 +1478,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="3">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Прием (осмотр, консультация) врача-ортодонта с установленной брекет системой</div>
@@ -1493,7 +1510,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="3">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
@@ -1525,10 +1542,10 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="4" id="price4">
 									<th colspan="3" class="table-price__title">Удаление зубов</th>
 								</tr>
-								<tr>
+								<tr data-item-price="4">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
@@ -1560,7 +1577,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="4">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
@@ -1592,7 +1609,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="4">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Прием (осмотр, консультация) врача-ортодонта с установленной брекет системой</div>
@@ -1624,7 +1641,7 @@
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr data-item-price="4">
 									<td class="table-price__info">
 										<div class="table-price__info-flex _flex">
 											<div class="table-price__name">Школа психологической профилактики для пациентов и родственников (адаптивный прием)</div>
