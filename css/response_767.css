@@ -1682,6 +1682,11 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    .tooltip__wrap{
+        left: auto;
+        right: 3px;
+    }
 	/* commit */
 
 	.doctor-info__bg
