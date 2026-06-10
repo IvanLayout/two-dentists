@@ -1389,6 +1389,10 @@ button
     margin-top: 6px;
 }
 
+.checkbox_marg{
+    margin-bottom: 10px;
+}
+
 .checkbox_dot{
     width: 20px;
 }
