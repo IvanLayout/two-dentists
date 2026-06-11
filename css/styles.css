@@ -4034,9 +4034,9 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .stages-work__desc-medium
 {
-	font-size: 24px;
+	/* font-size: 24px; */
 	font-weight: 500;
-	line-height: 1.08;
+	/* line-height: 1.08; */
 
 	width: 100%;
 	align-self: center;
@@ -4722,7 +4722,7 @@ input[type=checkbox]:checked + .checkbox__text::after
     width: calc(50% - 22px);
 }
 
-.content__coll .section-case__title{
+/* .content__coll .section-case__title{
     font-size: 23px;
     line-height: 1;
 }
@@ -4766,7 +4766,7 @@ input[type=checkbox]:checked + .checkbox__text::after
 .content__coll .section-case .btn-wrap{
     margin-top: 25px;
     text-align: left;
-}
+} */
 
 
 .inner-service__item.swiper-slide{

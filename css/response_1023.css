@@ -693,7 +693,7 @@
         width: 100%;
     }
 
-    .content__coll .section-case__title{
+    /* .content__coll .section-case__title{
         font-size: 32px;
         line-height: 1;
     }
@@ -739,7 +739,7 @@
     .content__coll .section-case .btn-wrap{
         margin-top: 32px;
         text-align: center;
-    }
+    } */
 
 
     .indicat-cont__box + .indicat-cont__box{

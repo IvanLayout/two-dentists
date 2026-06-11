@@ -1356,7 +1356,7 @@
     }
 
 
-    .content__coll .section-case__title{
+    /* .content__coll .section-case__title{
         font-size: 22px;
         line-height: 1.08;
     }
@@ -1399,7 +1399,7 @@
 
     .content__coll .section-case .btn-wrap{
         margin-top: 25px;
-    }
+    } */
 
 
     .check-list-bg{
@@ -1471,9 +1471,9 @@
         padding: 15px;
     }
 
-    .stages-work__desc-medium{
+    /* .stages-work__desc-medium{
         font-size: 18px;
-    }
+    } */
 
     .faq__item{
         padding: 15px;
