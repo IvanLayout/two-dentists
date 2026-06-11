@@ -848,6 +848,18 @@
     .pagination{
         margin-top: 40px;
     }
+
+
+    .button-up__btn{
+        width: 36px;
+        height: 36px;
+    }
+
+    .button-up__btn svg{
+        width: 6px;
+        height: 12px;
+        margin-top: -1px;
+    }
 	/* commit */
 
 	.doctor-info__bg

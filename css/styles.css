@@ -1125,6 +1125,7 @@ button
 }
 
 .text-block{
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.15;
 }
@@ -3716,6 +3717,10 @@ input[type=checkbox]:checked + .checkbox__text::after
     color: #fff;
 }
 
+.cats__item._hide{
+    display: none;
+}
+
 
 .stickers{
     gap: 10px;
@@ -3727,7 +3732,8 @@ input[type=checkbox]:checked + .checkbox__text::after
     top: 9px;
 }
 
-.table-price ._hide{
+.table-price ._hide,
+.table-price ._no{
     display: none;
 }
 
@@ -5151,6 +5157,58 @@ input[type=checkbox]:checked + .checkbox__text::after
     table-layout: fixed;
     width: 43px;
 }
+
+.button-up
+{
+    position: fixed;
+    z-index: 120;
+    left: 50%;
+    margin-left: 700px;
+    bottom: 40px;
+
+    display: none;
+}
+
+.button-up.hide{
+	display: none !important;
+}
+
+.button-up__btn
+{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    width: 50px;
+    height: 50px;
+    color: #fff;
+
+    transition: .2s linear;
+
+    border-radius: 50%;
+    background: #204F63;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+
+.button-up__btn:hover
+{
+    background-color: #D4E6EC;
+    color: #204F63;
+}
+
+.button-up__btn svg{
+    display: block;
+    width: 9px;
+    height: 17px;
+    fill: none;
+    stroke: currentColor;
+    transform: rotate(-90deg);
+    margin-top: -2px;
+}
 /* commit */
 
 .doctor-info__bg
@@ -6497,5 +6555,15 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
     body{
         zoom: .9;
+    }
+}
+
+@media (max-width: 1399px)
+{
+    .button-up{
+        left: auto;
+        margin-left: 0;
+        right: 30px;
+        bottom: 20px;
     }
 }

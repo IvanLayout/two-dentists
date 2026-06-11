@@ -241,6 +241,12 @@ $(() => {
 
 			if ($button.length) {
 				$target = $('#prices')
+
+				if ($button.hasClass('_hide')) {
+					$button.closest('.price-services').find('.btn-wrap').hide()
+					$button.closest('.price-services').find('.table-price ._no').removeClass('_no')
+					$button.closest('.price-services').find('.cats__item').removeClass('_hide')
+				}
 			}
 
             let offsetTophash = 10;
@@ -258,6 +264,36 @@ $(() => {
             }, 100);
         }
     }
+
+	$('body').on('click', '.price-services__more', function(e) {
+		$(this).closest('.btn-wrap').hide()
+		$(this).closest('.price-services').find('.table-price ._no').removeClass('_no')
+		$(this).closest('.price-services').find('.cats__item').removeClass('_hide')
+	})
+
+	// Кнопка 'Вверх'
+	$('body').on('click', '.button-up__btn', function(e) {
+		e.preventDefault()
+
+		$('body, html').stop(false, false).animate({
+			scrollTop: 0
+		}, 1000)
+	})
+})
+
+$(window).scroll(() => {
+	// Кнопка 'Вверх'
+	if( $(window).scrollTop() > $(window).height() ) {
+		$('.button-up').fadeIn(300)
+	} else {
+		$('.button-up').fadeOut(200)
+	}
+
+	if( $(window).scrollTop() > ($('.footer').offset().top - $(window).height()) ) {
+		$('.button-up').addClass('hide')
+	} else {
+		$('.button-up').removeClass('hide')
+	}
 })
 
 

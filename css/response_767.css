@@ -1687,6 +1687,10 @@
         left: auto;
         right: 3px;
     }
+
+    .button-up__btn{
+        bottom: 55px;
+    }
 	/* commit */
 
 	.doctor-info__bg
