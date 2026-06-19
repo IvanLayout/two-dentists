@@ -266,9 +266,17 @@ $(() => {
     }
 
 	$('body').on('click', '.price-services__more', function(e) {
-		$(this).closest('.btn-wrap').hide()
-		$(this).closest('.price-services').find('.table-price ._no').removeClass('_no')
-		$(this).closest('.price-services').find('.cats__item').removeClass('_hide')
+		if( $(this).hasClass('_active') ){
+			$(this).removeClass('_active')
+			$(this).closest('.price-services').find('.table-price ._no').removeClass('_show')
+			$(this).closest('.price-services').find('.cats__item._hide').removeClass('_show')
+
+			$('html, body').stop().animate({ scrollTop: $('#prices').offset().top }, 300)
+		} else {
+			$(this).addClass('_active')
+			$(this).closest('.price-services').find('.table-price ._no').addClass('_show')
+			$(this).closest('.price-services').find('.cats__item._hide').addClass('_show')
+		}
 	})
 
 	// Кнопка 'Вверх'

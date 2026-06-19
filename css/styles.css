@@ -1674,6 +1674,10 @@ input[type=checkbox]:checked + .checkbox__text::after
     scrollbar-width: thin;
 }
 
+.modal .select-wrap .nice-select .list .scrollbar{
+    max-height: 200px;
+}
+
 .select-wrap .nice-select .list .list_item
 {
     position: relative;
@@ -1703,6 +1707,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 .select-wrap .nice-select .list .list_item.selected
 {
     font-weight: 500;
+}
+
+.select-wrap .nice-select .list .list_item.disabled{
+    display: none;
 }
 
 
@@ -3306,6 +3314,8 @@ input[type=checkbox]:checked + .checkbox__text::after
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
 .specialist__name{
@@ -3721,6 +3731,10 @@ input[type=checkbox]:checked + .checkbox__text::after
     display: none;
 }
 
+.cats__item._hide._show{
+    display: flex;
+}
+
 
 .stickers{
     gap: 10px;
@@ -3735,6 +3749,22 @@ input[type=checkbox]:checked + .checkbox__text::after
 .table-price ._hide,
 .table-price ._no{
     display: none;
+}
+
+.table-price ._no._show{
+    display: table-row;
+}
+
+.price-services__more span + span{
+    display: none;
+}
+
+.price-services__more._active span{
+    display: none;
+}
+
+.price-services__more._active span + span{
+    display: inline;
 }
 
 .sticker{
@@ -6527,6 +6557,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .modal__title br{
     display: none;
+}
+
+.modal__title span{
+    display: inline-block;
 }
 
 .modal__subtitle{

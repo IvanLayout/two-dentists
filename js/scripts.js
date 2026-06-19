@@ -484,6 +484,28 @@ $(() => {
 			},
 		})
 	}
+
+	if ( $('#datepicker').length ) {
+		new AirDatepicker('#datepicker', {
+			container: '.form__datepicker',
+			minDate: new Date(),
+			firstDay: 1,
+			autoClose: true,
+		})
+	}
+	// if ( $('#datepicker').length ) {
+	// 	new AirDatepicker('#datepicker', {
+	// 		container: '.form__datepicker',
+	// 		minDate: new Date(),
+	// 		firstDay: 1,
+	// 		autoClose: true,
+	// 		timepicker: true,
+    // 		timeFormat: 'HH:mm',
+	// 		minHours: 9,
+	// 		maxHours: 18,
+	// 		minutesStep: 30
+	// 	})
+	// }
 });
 
 

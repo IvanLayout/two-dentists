@@ -32,6 +32,7 @@
 		<link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/twentytwenty.css">
+		<link rel="stylesheet" href="css/air-datepicker.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1299.css" media="(max-width: 1319px)">
@@ -1019,7 +1020,7 @@
 								</div>
 
 								<div class="main-banner__btn">
-									<a href="/" class="btn-blue">Узнать стоимость лечения</a>
+									<button type="button" data-content="#modal-find-cost" class="btn-blue modal-btn">Узнать стоимость лечения</button>
 								</div>
 							</div>
 							<div class="main-banner__colr">
@@ -1319,7 +1320,7 @@
 							</div>
 
 							<div class="btn-wrap">
-								<button type="button" data-content="#modal-request" class="btn-white btn-white_h modal-btn">Записаться на <em>онлайн</em> консультацию</button>
+								<button type="button" data-content="#modal-request3" class="btn-white btn-white_h modal-btn">Записаться на <em>онлайн</em> консультацию</button>
 							</div>
 						</div>
 					</div>
@@ -2560,8 +2561,47 @@
 							</div>
 						</div>
 						<div class="form__line">
+							<div class="form__field form__datepicker">
+								<input type="text" value="" placeholder="Дата" id="datepicker" class="form__input datepicker-input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field select-wrap">
+								<select>
+									<option value="0" data-display="Час"></option>
+									<option value="1">08:00</option>
+									<option value="2" disabled>08:30</option>
+									<option value="3">09:00</option>
+									<option value="4">09:30</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field select-wrap">
+								<select>
+									<option value="0" data-display="Врач"></option>
+									<option value="1">Шабанов Рамазан Гасанович</option>
+									<option value="2">Мандрик Светлана Владиславна</option>
+									<option value="3">Шаширина Александра Юрьевна</option>
+									<option value="4">Сотникова Юлия Анатольевна</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field select-wrap">
+								<select>
+									<option value="0" data-display="Услуга"></option>
+									<option value="1">Ортопедические услуги</option>
+									<option value="2">Консультация</option>
+									<option value="3">Профессиональная гигиена</option>
+									<option value="4">Отбеливание</option>
+									<option value="5">Исправление прикуса</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__line">
 							<div class="form__field">
-								<input type="text" value="" placeholder="Какая услуга вас интересует?" class="form__input">
+								<textarea placeholder="Комментарий" class="form__textarea"></textarea>
 							</div>
 						</div>
 						<div class="checkbox checkbox_marg">
@@ -2616,6 +2656,102 @@
 							</label>
 						</div>
 						<div class="form__submit">
+							<button type="submit" class="form__submit-btn btn-blue btn-blue_h">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="modal-request3" class="modal modal_small">
+			<div class="modal__wrap">
+				<div class="modal__pad">
+					<div class="modal__title modal__title_center">Записаться на <span>онлайн-консультацию</span></div>
+
+					<form action="" class="form">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="Ваше имя*" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" value="" placeholder="Ваше телефон*" data-mask="+7 (999) 999-99-99" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<textarea placeholder="Ваш вопрос" class="form__textarea"></textarea>
+							</div>
+						</div>
+						<div class="checkbox checkbox_marg">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
+
+								<span class="checkbox__text">
+									Нажимая на кнопку, вы соглашаетесь на обработку <br>персональных данных и с <a href="/" target="_blank">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>
+						<div class="checkbox checkbox_marg">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
+
+								<span class="checkbox__text">
+									Я согласен получать рекламные и информационные материалы
+								</span>
+							</label>
+						</div>
+						<div class="form__submit form__submit_center">
+							<button type="submit" class="form__submit-btn btn-blue btn-blue_h">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="modal-find-cost" class="modal modal_small">
+			<div class="modal__wrap">
+				<div class="modal__pad">
+					<div class="modal__title modal__title_center">Узнать стоимость лечения</div>
+
+					<form action="" class="form">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="Ваше имя*" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" value="" placeholder="Ваше телефон*" data-mask="+7 (999) 999-99-99" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__field">
+								<textarea placeholder="Ваш вопрос" class="form__textarea"></textarea>
+							</div>
+						</div>
+						<div class="checkbox checkbox_marg">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
+
+								<span class="checkbox__text">
+									Нажимая на кнопку, вы соглашаетесь на обработку <br>персональных данных и с <a href="/" target="_blank">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>
+						<div class="checkbox checkbox_marg">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
+
+								<span class="checkbox__text">
+									Я согласен получать рекламные и информационные материалы
+								</span>
+							</label>
+						</div>
+						<div class="form__submit form__submit_center">
 							<button type="submit" class="form__submit-btn btn-blue btn-blue_h">Отправить</button>
 						</div>
 					</form>
@@ -2683,6 +2819,7 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/jquery.event.move.js"></script>
 		<script src="js/jquery.twentytwenty.js"></script>
+		<script src="js/air-datepicker.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
