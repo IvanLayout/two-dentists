@@ -1125,7 +1125,6 @@ button
 }
 
 .text-block{
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.15;
 }
@@ -1184,10 +1183,6 @@ button
     margin-bottom: 15px;
 }
 
-.text-block_bold p{
-    font-weight: 500;
-}
-
 .text-block img
 {
     display: block;
@@ -1226,7 +1221,6 @@ button
     position: relative;
     padding-left: 30px;
     line-height: 1.33;
-    font-weight: 500;
 }
 
 .text-block li + li{
@@ -2226,10 +2220,6 @@ input[type=checkbox]:checked + .checkbox__text::after
     max-height: 100%;
 }
 
-.main-banner__info-desc{
-    font-weight: 500;
-}
-
 .main-banner__btn{
     margin-top: auto;
     padding-top: 30px;
@@ -2313,7 +2303,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .certificate__desc{
-    font-weight: 500;
     font-size: 14px;
     line-height: normal;
     color: #858585;
@@ -2598,7 +2587,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .advantages__desc{
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.13;
     color: var(--color2-adv);
@@ -2607,7 +2595,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .advantages__list{
     margin-top: 20px;
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.13;
     color: var(--color2-adv);
@@ -2705,7 +2692,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .comment__desc{
     margin-top: 10px;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
     color: #858585;
@@ -2920,7 +2906,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .media-about-us__desc{
     margin-top: 10px;
 
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
     color: #858585;
@@ -3042,24 +3027,17 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .media-contacts__metro-name{
-    font-weight: 500;
     font-size: 16px;
     line-height: normal;
 }
 
 .media-contacts__adres{
     margin-top: 10px;
-    font-weight: 500;
 }
 
 .media-contacts__time{
     margin-top: 10px;
-    font-weight: 500;
     color: #1986AC;
-}
-
-.media-contacts__desc{
-    font-weight: 500;
 }
 
 .media-contacts__map{
@@ -3154,7 +3132,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .section-case__doctor-position{
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
     color: #858585;
@@ -3338,7 +3315,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .specialist__position{
     margin-top: 10px;
-    font-weight: 500;
     font-size: 14px;
     line-height: normal;
     color: #858585;
@@ -3817,7 +3793,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .table-price__name{
-    font-weight: 500;
     font-size: 16px;
     line-height: normal;
 }
@@ -3877,7 +3852,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .tooltip__list{
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.33;
     list-style: none;
@@ -4070,10 +4044,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .stages-work__desc-medium
 {
-	/* font-size: 24px; */
-	font-weight: 500;
-	/* line-height: 1.08; */
-
 	width: 100%;
 	align-self: center;
 }
@@ -4220,7 +4190,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .service-info__item-desc{
     margin-top: 20px;
-    font-weight: 500;
     font-size: 16px;
     line-height: normal;
     color: #858585;
@@ -4319,7 +4288,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .rvice-info__doctor-position{
-    font-weight: 500;
     font-size: 16px;
     color: #858585;
     margin-top: 5px;
@@ -4452,7 +4420,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .service-top__time{
-    font-weight: 500;
     line-height: 1.17;
     color: #0b3243;
     margin-top: 10px;
@@ -4497,7 +4464,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .service-top__list li{
-    font-weight: 500;
     line-height: 1.33;
     position: relative;
     padding-left: 30px;
@@ -4609,7 +4575,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .aside__link{
     width: 100%;
-    font-weight: 500;
     font-size: 16px;
     color: #858585;
     text-align: left;
@@ -4641,7 +4606,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .what-this__list li{
     position: relative;
     padding-left: 30px;
-    font-weight: 500;
     line-height: 1.33;
 }
 
@@ -4731,7 +4695,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .inner-advantages__desc{
     margin-top: auto;
 
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.13;
     color: var(--color_adv_d);
@@ -4850,7 +4813,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .inner-service__prices-title{
-    font-weight: 500;
     font-size: 14px;
     line-height: normal;
     color: #858585;
@@ -4953,7 +4915,6 @@ input[type=checkbox]:checked + .checkbox__text::after
     background: #F2F2EF;
     text-decoration: none;
     display: inline-block;
-    font-weight: 500;
     font-size: 16px;
     color: #204F63;
 }
@@ -5001,7 +4962,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 
 .make-appointment__desc{
     margin-top: 25px;
-    font-weight: 600;
 }
 
 .make-appointment__bot{
@@ -5048,7 +5008,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 .inner-img__text p{
-    font-weight: 500;
     margin-bottom: 25px;
 }
 
@@ -5134,7 +5093,6 @@ input[type=checkbox]:checked + .checkbox__text::after
     border-bottom: 1px solid #eaecf0;
     padding: 11px 0 11px 23px;
 
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
     color: #204F63;
@@ -5147,7 +5105,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .info-sticker span{
     display: inline-block;
     vertical-align: top;
-    font-weight: 500;
     font-size: 12px;
     line-height: 22px;
     color: #037847 !important;
@@ -5329,7 +5286,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .doctor-info__spec
 {
 	font-size: 14px;
-	font-weight: 500;
 }
 
 .doctor-info__spec span
@@ -5356,7 +5312,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	margin: 15px 0 0 15px;
 	font-size: 14px;
-	font-weight: 500;
 }
 
 .doctor-info__link
@@ -5662,7 +5617,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	font-size: 28px;
 	line-height: 1.14;
-	font-weight: 500;
 }
 
 .contacts-page__phone a
@@ -5675,7 +5629,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 {
 	font-size: 24px;
 	line-height: 1.08;
-	font-weight: 500;
 }
 
 .contacts-page__adres span
@@ -5695,7 +5648,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	margin-top: 15px;
 	color: #858585;
 	line-height: 1.16;
-	font-weight: 500;
 }
 
 .contacts-page__details-title
@@ -5707,7 +5659,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .contacts-page__details-desc
 {
 	margin-top: 15px;
-	font-weight: 500;
 	line-height: 1.33;
 }
 
@@ -5754,7 +5705,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .contacts-page__get-adres
 {
 	margin-top: 25px;
-	font-weight: 500;
 	line-height: 1.16;
 }
 
@@ -5792,7 +5742,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 .contacts-page__get-open
 {
 	line-height: 1.33;
-	font-weight: 500;
 	padding-left: 28px;
 	position: relative;
 	cursor: pointer;
@@ -5950,7 +5899,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding-left: 31px;
 	position: relative;
 	line-height: 1.33;
-	font-weight: 500;
 }
 
 .check-list li::before
@@ -6002,7 +5950,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding-left: 31px;
 	position: relative;
 	line-height: 1.33;
-	font-weight: 500;
 }
 
 .cross-list li::before
@@ -6026,8 +5973,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	border-radius: 20px;
 	background: #FCEDED;
 	padding: 20px;
-
-	font-weight: 500;
 	line-height: 1.33;
 }
 
@@ -6090,7 +6035,6 @@ input[type=checkbox]:checked + .checkbox__text::after
 	padding-left: 29px;
 	position: relative;
 	line-height: 1.33;
-	font-weight: 500;
 }
 
 .circle-list li::before
